@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "debo",
+  "risk": "3",
+  "title": "Incorrect Argument Passed to __Ownable_init During ERC20CodecV1 Contract Initialization ",
+  "issueId": 10,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/10"
+}
