@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "debo",
+  "risk": "2",
+  "title": "TokenRoles contract has Incorrect Argument Count in __Ownable_init Call",
+  "issueId": 16,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/16"
+}
