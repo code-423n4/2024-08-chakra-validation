@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "gajiknownnothing",
+  "risk": "3",
+  "title": "Unauthorized access to `send_cross_chain_msg()` causes emit cross-chain events without locking or burning tokens",
+  "issueId": 13,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/13"
+}
