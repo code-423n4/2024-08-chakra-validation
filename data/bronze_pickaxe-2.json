@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "bronze_pickaxe",
+  "risk": "2",
+  "title": "Setting new required validators will lead to DoS of a xchain message",
+  "issueId": 2,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/2"
+}
