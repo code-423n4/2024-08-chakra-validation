@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "`from_chain` exclusion in validator signatures allows malicious actors to block cross-chain callbacks on source chain",
+  "issueId": 25,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/25"
+}
