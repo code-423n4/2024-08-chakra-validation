@@ -1,0 +1,1 @@
+In the line 12 of `cairo/handler/src/ckr_btc.cairo` file, the signature of the function `burn_from` is inappropriate. Consider modify `to` to `from`.
