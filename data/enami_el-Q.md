@@ -1,4 +1,4 @@
-### Issue: Inadequate Validation of Constructor Parameters
+### Inadequate Validation of Constructor Parameters
 
 #### Severity: Low
 
@@ -46,3 +46,73 @@ link: https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/co
    ```solidity
    require(_token != address(0), "Invalid token address.");
    ```
+### Typo in `CrossChainTxStatus` Enum
+
+#### Severity: Informational
+
+#### Description:
+The `CrossChainTxStatus` enum has a typo, with the value "Unknow" instead of "Unknown." This can lead to confusion.
+
+#### Code :
+
+``` solidity
+    enum HandlerStatus {
+        Unknow,
+        Pending,
+        Success,
+        Failed
+    }
+```
+https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/BaseSettlementHandler.sol#L101-L102
+#### Recommendation:
+Rename `Unknow` to `Unknown` for clarity and consistency.
+
+
+
+
+
+###  No Check for Unique `txid` in `create_cross_txs` Mapping
+
+#### Severity: Low
+
+#### Description:
+The `create_cross_txs` mapping stores `CreatedCrossChainTx` by transaction ID (`txid`). There is no check to ensure that the `txid` is unique, which could lead to overwriting existing transactions and loss of data.
+
+#### Code
+
+``` solidity
+        uint256 txid = uint256(
+            keccak256(
+                abi.encodePacked(
+                    chain,
+                    to_chain,
+                    msg.sender, // from address for settlement to calculate txid
+                    address(this), //  from handler for settlement to calculate txid
+                    to_handler,
+                    nonce_manager[msg.sender]
+                )
+            )
+        );
+
+        {
+            // Save the cross chain tx
+            create_cross_txs[txid] = CreatedCrossChainTx(
+                txid,
+                chain,
+                to_chain,
+                msg.sender,
+                to,
+                address(this),
+                to_token,
+                amount,
+                CrossChainTxStatus.Pending
+            );
+        }
+```
+https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L138-L165
+#### Recommendation:
+Implement a check to ensure that the `txid` is unique before creating a new cross-chain transaction.
+
+```solidity
+require(create_cross_txs[txid].txid == 0, "Transaction ID already exists");
+```
