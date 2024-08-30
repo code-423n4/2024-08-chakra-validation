@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xastronatey",
+  "risk": "2",
+  "title": "Missing Upgrade Authorization in TokenRoles Contract",
+  "issueId": 11,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/11"
+}
