@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "gajiknownnothing",
+  "risk": "3",
+  "title": "Griefing attack on receive_cross_chain_msg() function to lock users' tokens",
+  "issueId": 28,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/28"
+}
