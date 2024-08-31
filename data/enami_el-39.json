@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "enami_el",
+  "risk": "3",
+  "title": "Lack of Minimum Validator Requirement in set_required_validators_num Function",
+  "issueId": 39,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/39"
+}
