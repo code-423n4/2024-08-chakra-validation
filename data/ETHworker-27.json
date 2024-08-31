@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ETHworker",
+  "risk": "3",
+  "title": "Validator signature verification can be bypassed, allowing execution of unauthorized cross-chain transactions with fewer than required valid signatures",
+  "issueId": 27,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/27"
+}
