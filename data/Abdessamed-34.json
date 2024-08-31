@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "Cross-chain messages can be initiated to destination handlers not whitelisted on the Source Chain",
+  "issueId": 34,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/34"
+}
