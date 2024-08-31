@@ -1,4 +1,4 @@
-### Inefficient Gas Usage Due to Lack of Pre-check in `add_handler` and `remove_handler` Functions
+### G-01 Inefficient Gas Usage Due to Lack of Pre-check in `add_handler` and `remove_handler` Functions
 
 ### Description:
 The current implementation of the `add_handler` and `remove_handler` functions does not include a check to verify the current status of the `handler_whitelist` before updating it. This can lead to unnecessary state changes, consuming more gas than required. By adding a pre-check to ensure that the handler is not already in the desired state, gas usage can be optimized, reducing costs for users interacting with these functions.
