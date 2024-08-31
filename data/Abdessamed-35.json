@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "Early burn in `BurnUnlock` mode can lead to permanent loss of users' assets if cross-chain messages fail",
+  "issueId": 35,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/35"
+}
