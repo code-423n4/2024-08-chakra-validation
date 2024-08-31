@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "gajiknownnothing",
+  "risk": "2",
+  "title": "The `ChakraSettlement` contract is missing a handler whitelist",
+  "issueId": 33,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/33"
+}
