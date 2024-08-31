@@ -1,4 +1,4 @@
-### Inadequate Validation of Constructor Parameters
+### L-01 Inadequate Validation of Constructor Parameters
 
 #### Severity: Low
 
@@ -71,7 +71,7 @@ Rename `Unknow` to `Unknown` for clarity and consistency.
 
 
 
-###  No Check for Unique `txid` in `create_cross_txs` Mapping
+###  S-01 No Check for Unique `txid` in `create_cross_txs` Mapping
 
 #### Severity: Low
 
