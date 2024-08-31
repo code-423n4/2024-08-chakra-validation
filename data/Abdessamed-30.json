@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "Incorrect argument order in `CrossChainHandleResult` event emission leads to incorrect cross-chain message finalization",
+  "issueId": 30,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/30"
+}
