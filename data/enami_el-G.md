@@ -105,6 +105,7 @@ function add_manager(address _manager) external onlyOwner {
     emit ManagerAdded(msg.sender, _manager);
 }
 ```
+https://github.com/code-423n4/2024-08-chakra/blob/abef77d95866f2fec93270491fc5abc9ab14f86d/solidity/settlement/contracts/BaseSettlement.sol#L149
 
 ### Recommendation:
 Before granting the `MANAGER_ROLE`, add a check to see if the `_manager` address already has the role. This will prevent redundant role assignments and save gas.
@@ -119,3 +120,29 @@ function add_manager(address _manager) external onlyOwner {
 }
 ```
 
+### G-04 Potential Redundant Role Revocation in `remove_manager` Function
+
+### Description:
+The `remove_manager` function currently revokes the `MANAGER_ROLE` from the provided `_manager` address without checking if the address actually holds this role. This can lead to unnecessary gas consumption by redundantly calling `revokeRole` for addresses that are not managers. While this does not affect the contract's functionality, it can be optimized to prevent unnecessary operations.
+
+### Part of Code:
+```solidity
+function remove_manager(address _manager) external onlyOwner {
+    revokeRole(MANAGER_ROLE, _manager);
+    emit ManagerRemoved(msg.sender, _manager);
+}
+```
+https://github.com/code-423n4/2024-08-chakra/blob/abef77d95866f2fec93270491fc5abc9ab14f86d/solidity/settlement/contracts/BaseSettlement.sol#L159C1-L162C6
+
+### Recommendation:
+Before revoking the `MANAGER_ROLE`, add a check to see if the `_manager` address currently has the role. This will prevent unnecessary role revocations and save gas.
+
+Example update:
+```solidity
+function remove_manager(address _manager) external onlyOwner {
+    if (hasRole(MANAGER_ROLE, _manager)) {
+        revokeRole(MANAGER_ROLE, _manager);
+        emit ManagerRemoved(msg.sender, _manager);
+    }
+}
+```
