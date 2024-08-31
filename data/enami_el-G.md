@@ -91,3 +91,31 @@ https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contr
 ### Recommendation:
 To mitigate the potential gas inefficiency, implement a limit on the number of managers that can be assigned during initialization. This can be achieved by adding a `require` statement to enforce a maximum number of managers, which would prevent the loop from iterating excessively.
 
+
+
+### G-03 Potential Redundant Role Assignment in `add_manager` Function
+
+### Description:
+The `add_manager` function currently assigns the `MANAGER_ROLE` to the provided `_manager` address without checking if the address already holds this role. This can lead to unnecessary gas consumption by redundantly calling `grantRole` for addresses that are already managers. Although this does not impact the functionality of the contract, it can be optimized to prevent unnecessary operations.
+
+### Part of Code:
+```solidity
+function add_manager(address _manager) external onlyOwner {
+    grantRole(MANAGER_ROLE, _manager);
+    emit ManagerAdded(msg.sender, _manager);
+}
+```
+
+### Recommendation:
+Before granting the `MANAGER_ROLE`, add a check to see if the `_manager` address already has the role. This will prevent redundant role assignments and save gas.
+
+Example update:
+```solidity
+function add_manager(address _manager) external onlyOwner {
+    if (!hasRole(MANAGER_ROLE, _manager)) {
+        grantRole(MANAGER_ROLE, _manager);
+        emit ManagerAdded(msg.sender, _manager);
+    }
+}
+```
+
