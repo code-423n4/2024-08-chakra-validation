@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "debo",
+  "risk": "3",
+  "title": "SettlementSignatureVerifier contract has DoS With Block Gas Limit in verifyECDSA Function",
+  "issueId": 56,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/56"
+}
