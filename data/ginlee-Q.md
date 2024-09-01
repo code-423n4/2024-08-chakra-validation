@@ -28,3 +28,19 @@ enum HandlerStatus {
 ```
 
 Recommendation: Update all instances of "Unkown" and "Unknow" to "Unknown" in the affected contracts to prevent any potential confusion and to adhere to proper English spelling standards.
+
+
+
+# [L-02] Use of _disableInitializers() Function in Upgradeable Contracts
+The ChakraTokenUpgrade and other upgradable contracts are missing a constructor with the proper annotation to prevent vulnerabilities associated with uninitialized contracts. In the context of upgradeable contracts, it's important to use a constructor to disable initializers, ensuring the implementation contract cannot be initialized directly.
+Without this constructor and annotation, there is a risk that the implementation contract could be initialized by an unauthorized party. This could lead to unintended behavior or security vulnerabilities, such as unauthorized minting or burning of tokens.
+
+Recommendation:
+Add the following constructor to the contract to disable initializers and prevent the implementation contract from being initialized
+```solidity
+/// @custom:oz-upgrades-unsafe-allow constructor
+constructor() {
+   _disableInitializers();
+}
+```
+
