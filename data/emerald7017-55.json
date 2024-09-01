@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "The `initialize` function does not have any checks to prevent it from being called multiple times. Each time it's called, it re-initializes the contract state, allowing mode to be changed.",
+  "issueId": 55,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/55"
+}
