@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "The `cross_chain_erc20_settlement` does not check if the sender has sufficient balance before initiating the token transfer.",
+  "issueId": 57,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/57"
+}
