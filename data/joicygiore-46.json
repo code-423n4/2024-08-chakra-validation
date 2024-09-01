@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "joicygiore",
+  "risk": "3",
+  "title": "`ChakraSettlement::send_cross_chain_msg()` Can Be Called by Anyone, Leading to Malicious Updates in the `nonce_manager` Mapping, Potentially Causing the Program to Fail.",
+  "issueId": 46,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/46"
+}
