@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "debo",
+  "risk": "2",
+  "title": "ERC20CodecV1 contract has Typographical Error in Function Name deocde_transfer",
+  "issueId": 48,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/48"
+}
