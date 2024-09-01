@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "Reentrancy vulnerability in `receive_cross_chain_msg` during ERC-777 cross-chain transfers allows malicious users to drain the protocol",
+  "issueId": 54,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/54"
+}
