@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "CreatedCrossChainTx struct has incorrectly assigned values when sending a cross-chain tx",
+  "issueId": 68,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/68"
+}
