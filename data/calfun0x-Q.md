@@ -1,0 +1,66 @@
+## Title
+Any manager could leave the protocol without managers in ckr_btc.cairo
+
+## Description
+`remove_manager` function in `ckr_btc.cairo` lack of control to remove himself letting a manager remove all managers and himself.
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/ckr_btc.cairo#L148C1-L161C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/ckr_btc.cairo#L148C1-L161C10)
+```rust
+fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
+    let caller = get_caller_address();
+    assert(self.chakra_managers.read(caller) == 1, Errors::NOT_MANAGER);
+    self.chakra_managers.write(old_manager, 0);
+    // ...
+}
+```
+
+## Impact
+This could lead to remove all managers from the protocol (included himself) and nobody else could add or remove operators in the future.
+
+## Proof of Concept
+
+Add this POC to cairo/handler/src/tests/test_settlement.cairo
+```rust
+#[test]
+fn test_remove_all_managers(){
+    let owner_address = 0x5a9bd6214db5b229bd17a4050585b21c87fc0cadf9871f89a099d27ef800a40;
+    let manager1_address = starknet::contract_address_const::<'manager1_address'>();
+    let manager2_address = starknet::contract_address_const::<'manager2_address'>();
+    
+    let ckrBTC_contract = declare("ckrBTC");
+    // Add owner as manager in constructor
+    let ckrBTC_address = ckrBTC_contract.deploy(@array![owner_address]).unwrap();
+    let ckrbtc_dispath = IckrBTCDispatcher{contract_address: ckrBTC_address};
+    
+    let owner = owner_address.try_into().unwrap();
+
+    // Add manager1 and manager2
+    start_prank(CheatTarget::One(ckrBTC_address), owner);
+    ckrbtc_dispath.add_manager(manager1_address);
+    ckrbtc_dispath.add_manager(manager2_address);
+    stop_prank(CheatTarget::One(ckrBTC_address));
+
+    // Manager2 remove all managers (included himself and owner)
+    start_prank(CheatTarget::One(ckrBTC_address), manager2_address);
+    ckrbtc_dispath.remove_manager(owner);
+    ckrbtc_dispath.remove_manager(manager1_address);
+    ckrbtc_dispath.remove_manager(manager2_address);
+    stop_prank(CheatTarget::One(ckrBTC_address));
+
+    assert(ckrbtc_dispath.is_manager(owner) == false, 'owner is still manager');
+    assert(ckrbtc_dispath.is_manager(manager1_address) == false, 'manager1 is still manager');
+    assert(ckrbtc_dispath.is_manager(manager2_address) == false, 'manager2 is still manager');
+}
+```
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Add a control to prevent auto-remove or (as in solidity) allow the owner to add new managers.
+```rust
+fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
+    // ...
+    assert(old_manager != caller, 'cant remove yourself');
+    // ...
+}
+```
