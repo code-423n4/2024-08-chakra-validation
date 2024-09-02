@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "TokenRoles inherits UUPSUpgradeable functionality but it does not initialize it",
+  "issueId": 73,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/73"
+}
