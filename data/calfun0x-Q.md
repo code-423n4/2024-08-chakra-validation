@@ -162,7 +162,7 @@ Manual revision
 Emit an event after change adminitrative variables status.
 
 ## Title
-Missed zero value check when set required validators number could lead to authorize transactions with zero valid signatures.
+Missed zero value check when set required validators number could lead to authorize transactions without valid signatures (broking main invariant for settlement contract).
 
 ## Description
 The functions `set_required_validators_num` in `cairo/handler/src/settlement.cairo` lacks of zero values checks for `new_num` parameter.
