@@ -133,3 +133,30 @@ fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool
     // ...
 }
 ```
+
+## Title
+Missed event for admin operation in cairo functions
+
+## Description
+The functions `set_required_validators_num` in `cairo/handler/src/settlement.cairo` lacks of events for administrative writing operations which is a best practice for admin operations.
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L197C1-L202C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L197C1-L202C10)
+```rust
+fn set_required_validators_num(ref self: ContractState, new_num: u32) -> u32 {
+    let caller = get_caller_address();
+    assert(self.chakra_managers.read(caller) == 1, 'Caller is not a manager');
+    self.required_validators_num.write(new_num);
+    return self.required_validators_num.read();
+}
+```
+
+## Impact
+Lost of critical records to audit administrator activities and keep transparency for third parties.
+
+## Proof of Concept
+N/A
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Emit an event after change adminitrative variables status.
