@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "joicygiore",
+  "risk": "3",
+  "title": "Incorrect Event Parameter in `ChakraSettlementHandler::cross_chain_erc20_settlement()` Function",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/60"
+}
