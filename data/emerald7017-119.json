@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "In the condition `validators[msgHash.recover(sig)] && ++m >= required_validators`.  Even if the signature is valid and the recovered address is a validator, the function will return false if `m` is not greater than or equal to `required_validators`.",
+  "issueId": 119,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/119"
+}
