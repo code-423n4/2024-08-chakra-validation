@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "After the `is_valid_handler` check fails, the function should immediately return or revert to prevent further execution with an invalid `from_handler`. ",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/112"
+}
