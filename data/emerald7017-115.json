@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "The `verifyECDSA` function doesn't handle the case of an empty signature array correctly. It immediately returns false if there are no signatures, even though the invariant expects it to return true for `sign_type == 0`.",
+  "issueId": 115,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/115"
+}
