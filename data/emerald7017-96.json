@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "emerald7017",
+  "risk": "2",
+  "title": "`receive_cross_chain_callback` allows the transaction status to be changed from `Pending` to `Settled` or `Failed` without ensuring that the transaction has been processed and settled on the destination chain.",
+  "issueId": 96,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/96"
+}
