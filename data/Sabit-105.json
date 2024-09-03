@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Sabit",
+  "risk": "3",
+  "title": "Lack of duplicate signature check in verifyECDSA function",
+  "issueId": 105,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/105"
+}
