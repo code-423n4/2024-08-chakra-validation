@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "TECHFUND-inc",
+  "risk": "3",
+  "title": "ERC20Transfer payload should be validated against a whitelisted mapping for Token identifier across chains",
+  "issueId": 100,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/100"
+}
