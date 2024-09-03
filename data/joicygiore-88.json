@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "joicygiore",
+  "risk": "3",
+  "title": "`settlement.cairo::send_cross_chain_msg()` lacks a permission check, allowing unauthorized users to call this method and increment `tx_count`.",
+  "issueId": 88,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/88"
+}
