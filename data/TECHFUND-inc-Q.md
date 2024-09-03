@@ -10,3 +10,6 @@
     Burn // 5: Destroy existing tokens
 }
 ```
+
+### ChakraSettlementHandler::cross_chain_erc20_settlement()
+the `cross_chain_erc20_settlement()` function should check that the `to_chain` and `chain` are of different values.  This ensure that message is always cross chain and does not allow the caller to send message to the same chain. 
