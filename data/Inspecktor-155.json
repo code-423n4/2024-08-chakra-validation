@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Inspecktor",
+  "risk": "3",
+  "title": "Incorrectly writing the function call will result in incorrect functioning of the ChakraSettlementHandler.receive_cross_chain_msg() function.",
+  "issueId": 155,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/155"
+}
