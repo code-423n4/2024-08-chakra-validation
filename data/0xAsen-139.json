@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xAsen",
+  "risk": "3",
+  "title": "Wrong check about whitelisted handlers in handler_erc20.cairo::receive_cross_chain_msg",
+  "issueId": 139,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/139"
+}
