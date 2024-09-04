@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "abhishek_thaku_r",
+  "risk": "3",
+  "title": "Unprotected Initialization in `ChakraSettlementHandler`",
+  "issueId": 133,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/133"
+}
