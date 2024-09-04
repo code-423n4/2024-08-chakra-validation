@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Drynooo",
+  "risk": "2",
+  "title": "The txid in ChakraSettlementUpgradeTest and ChakraSettlementHandler cannot correspond, and cross-chain cannot work properly.",
+  "issueId": 126,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/126"
+}
