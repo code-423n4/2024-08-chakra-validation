@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Inspecktor",
+  "risk": "3",
+  "title": "Inter-chain messages will not be executed",
+  "issueId": 156,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/156"
+}
