@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0x40",
+  "risk": "3",
+  "title": "function _Settlement_init()::BaseSettlement.sol should be internal",
+  "issueId": 148,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/148"
+}
