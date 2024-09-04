@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xAsen",
+  "risk": "3",
+  "title": "send_cross_chain_msg should be callable only by Handler contract but lacks access control in both settlement.cairo and ChakraSettlement.sol",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/144"
+}
