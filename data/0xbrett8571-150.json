@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xbrett8571",
+  "risk": "2",
+  "title": "cross-chain settlement may not accurately track the total transaction amounts, leading to inconsistencies and potential loss of funds.",
+  "issueId": 150,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/150"
+}
