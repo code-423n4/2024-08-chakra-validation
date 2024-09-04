@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xbrett8571",
+  "risk": "2",
+  "title": "When creating the `CreatedCrossChainTx` struct and saving it to the `create_cross_txs` mapping, the `to_token` parameter is used instead of the `to_handler` parameter",
+  "issueId": 160,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/160"
+}
