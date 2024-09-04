@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "It'll not be possible to process callback if the transaction reverts on the destination chain",
+  "issueId": 132,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/132"
+}
