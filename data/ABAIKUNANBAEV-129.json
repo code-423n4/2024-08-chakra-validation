@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "Status Unknow is not checked on the Starknet when receiving tx",
+  "issueId": 129,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/129"
+}
