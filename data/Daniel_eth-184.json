@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Daniel_eth",
+  "risk": "2",
+  "title": "No access control in 'send_cross_chain_msg' can lead to DoS attacks",
+  "issueId": 184,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/184"
+}
