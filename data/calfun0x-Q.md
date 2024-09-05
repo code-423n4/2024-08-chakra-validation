@@ -162,44 +162,26 @@ Manual revision
 Emit an event after change adminitrative variables status.
 
 ## Title
-Missed zero value check when set required validators number could lead to authorize transactions without valid signatures (broking main invariant for settlement contract).
+Missed checks on Cairo functions that exists on Solidity functions.
 
 ## Description
-The functions `set_required_validators_num` in `cairo/handler/src/settlement.cairo` lacks of zero values checks for `new_num` parameter.
-.
-[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L197C1-L202C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L197C1-L202C10)
+The next functions in cairo files miss the existing checks in Solidity files:
+
 ```rust
-fn set_required_validators_num(ref self: ContractState, new_num: u32) -> u32 {
-    let caller = get_caller_address();
-    assert(self.chakra_managers.read(caller) == 1, 'Caller is not a manager');
-    self.required_validators_num.write(new_num);
-    return self.required_validators_num.read();
-}
+fn cross_chain_erc20_settlement(ref self: ContractState, to_chain: felt252, to_handler: u256, to_token: u256, to: u256, amount: u256) -> felt252{
+    // ...
+};
 ```
 
+```solidity
+function cross_chain_erc20_settlement( ... ) external {
+    require(amount > 0, "Amount must be greater than 0");
+    require(to != 0, "Invalid to address");
+    require(to_handler != 0, "Invalid to handler address");
+    require(to_token != 0, "Invalid to token address");
+```
 ## Impact
-Authorize transaction with zero valid signatures if an admin set this value to zero (intentionally or unintentionally). As we can see in `check_chakra_signatures` validation, the last assert will pass even if pass_count is equal to zero, which means there is no valid signatures.
-
-```rust
-fn check_chakra_signatures(
-    self: @ContractState, message_hash: felt252, signatures: Array<(felt252, felt252, bool)>
-){
-    let mut pass_count = 0;
-    let mut i = 0;
-    loop {
-        if i > signatures.len()-1{
-            break;
-        }
-        let (r,s,y) = * signatures.at(i);
-        let pub_key: felt252 = recover_public_key(message_hash,r,s,y).unwrap();
-        if self.chakra_validators_pubkey.read(pub_key) > 0{
-            pass_count += 1;
-        }
-        i += 1;
-    };
-    assert(pass_count >= self.required_validators_num.read(), 'Not enough validate signatures');
-}
-```
+Inconsistency between languages ​​makes it difficult for programmers to find bugs and implement future maintenance.
 
 ## Proof of Concept
 N/A
@@ -208,7 +190,4 @@ N/A
 Manual revision
 
 ## Recommended Mitigation Steps
-Add a zero check validation for `new_num` parameter.
-```rust
-assert(new_num > 0, 'Zero value is not permitted');
-```
+Add solidity checks into cairo functions.
