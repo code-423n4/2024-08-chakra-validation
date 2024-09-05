@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "ChakraSettlement would not work on zkSync due to the nonce ordering",
+  "issueId": 162,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/162"
+}
