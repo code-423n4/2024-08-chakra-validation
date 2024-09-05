@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Alhakista",
+  "risk": "2",
+  "title": "Potential Zero address acceptance due to incorrect validation",
+  "issueId": 169,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/169"
+}
