@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xRiO",
+  "risk": "3",
+  "title": "Improper Initialization of Upgradable Contract",
+  "issueId": 199,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/199"
+}
