@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0x37",
+  "risk": "3",
+  "title": "from_chain is not included in the signature verify in receive_cross_chain_callback()",
+  "issueId": 204,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/204"
+}
