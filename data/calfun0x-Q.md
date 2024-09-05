@@ -162,7 +162,7 @@ Manual revision
 Emit an event after change adminitrative variables status.
 
 ## Title
-Missed checks in Cairo functions that exists on Solidity functions.
+Missed checks in Cairo functions that exists on Solidity functions with the same logic.
 
 ## Description
 The next functions in cairo files miss the existing checks in Solidity files:
@@ -207,4 +207,39 @@ N/A
 Manual revision
 
 ## Recommended Mitigation Steps
-Add solidity checks into cairo functions.
+Add missing Solidity checks into Cairo functions.
+
+## Title
+Missed checks in Solidity functions that exists on Cairo functions with the same logic.
+
+## Description
+The next functions in solidity files miss the existing checks in Cairo files:
+
+```solidity
+function processCrossChainCallback( ... ) internal {
+    // ...
+}
+```
+
+```rust
+fn receive_cross_chain_callback( ... ) -> bool {
+    assert(self.created_tx.read(cross_chain_msg_id).tx_id == cross_chain_msg_id, 'message id error');
+    assert(self.created_tx.read(cross_chain_msg_id).from_chain == to_chain, 'from_chain error');
+    assert(self.created_tx.read(cross_chain_msg_id).to_chain == from_chain, 'to_chain error');
+    assert(self.created_tx.read(cross_chain_msg_id).from_handler == to_handler, 'from_handler error');
+    assert(self.created_tx.read(cross_chain_msg_id).to_handler == from_handler, 'to_handler error');
+    // ...
+}
+```
+
+## Impact
+Inconsistency between same logic in different programming languages ​​makes it difficult for programmers to find bugs and implement future maintenance.
+
+## Proof of Concept
+N/A
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Add missing Cairo checks into Solidity functions.
