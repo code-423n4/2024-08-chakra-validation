@@ -162,13 +162,13 @@ Manual revision
 Emit an event after change adminitrative variables status.
 
 ## Title
-Missed checks on Cairo functions that exists on Solidity functions.
+Missed checks in Cairo functions that exists on Solidity functions.
 
 ## Description
 The next functions in cairo files miss the existing checks in Solidity files:
 
 ```rust
-fn cross_chain_erc20_settlement(ref self: ContractState, to_chain: felt252, to_handler: u256, to_token: u256, to: u256, amount: u256) -> felt252{
+fn cross_chain_erc20_settlement( ... ) -> felt252{
     // ...
 };
 ```
@@ -180,8 +180,25 @@ function cross_chain_erc20_settlement( ... ) external {
     require(to_handler != 0, "Invalid to handler address");
     require(to_token != 0, "Invalid to token address");
 ```
+
+```rust
+fn receive_cross_chain_callback( ... ) -> bool{
+    // ...}
+```
+
+```solidity
+function receive_cross_chain_callback( ... ) external onlySettlement returns (bool) {
+    // ...
+    require(
+        create_cross_txs[txid].status == CrossChainTxStatus.Pending,
+        "invalid CrossChainTxStatus"
+    );
+    // ...
+}
+```
+
 ## Impact
-Inconsistency between languages ​​makes it difficult for programmers to find bugs and implement future maintenance.
+Inconsistency between same logic in different programming languages ​​makes it difficult for programmers to find bugs and implement future maintenance.
 
 ## Proof of Concept
 N/A
