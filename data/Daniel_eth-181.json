@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Daniel_eth",
+  "risk": "3",
+  "title": "Standard ERC20 tokens can't be utilized in mode MintBurn, LockMint and BurnUnlock.",
+  "issueId": 181,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/181"
+}
