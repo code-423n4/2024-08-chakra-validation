@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Decap",
+  "risk": "2",
+  "title": "Accepting all ERC20 tokens is not safe",
+  "issueId": 187,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/187"
+}
