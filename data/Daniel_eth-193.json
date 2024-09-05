@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Daniel_eth",
+  "risk": "3",
+  "title": "Malicious users could drain the funds in the settlements handlers by receiving more than what they locked.",
+  "issueId": 193,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/193"
+}
