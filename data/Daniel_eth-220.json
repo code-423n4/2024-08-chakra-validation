@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Daniel_eth",
+  "risk": "2",
+  "title": "In the mode LockMint the funds locked in the handler contract cannot be withdrawn, burned or unlocked.",
+  "issueId": 220,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/220"
+}
