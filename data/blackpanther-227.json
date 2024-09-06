@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "blackpanther",
+  "risk": "2",
+  "title": "ERC20 transfer function gas limitation in ChakraSettlementHandler",
+  "issueId": 227,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/227"
+}
