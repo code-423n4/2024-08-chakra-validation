@@ -404,3 +404,59 @@ Manual revision
 
 ## Recommended Mitigation Steps
 Fix variables used that do not correspond with the event fields.
+
+## Title
+Wrongly filling from_token in create_cross_txs struct mapping variable.
+
+## Description
+The from_token field is being assigned with handler contract address (this) intead of the from_token: AddressCast.to_uint256(token)
+
+File ChakraSettlementHandler.sol
+Function: cross_chain_erc20_settlement
+```solidity
+function cross_chain_erc20_settlement( ... ) external {
+    // ...
+    
+    create_cross_txs[txid] = CreatedCrossChainTx(
+        txid,
+        chain,
+        to_chain,
+        msg.sender,
+        to,
+        address(this), <- This should be token addr not handler addr.
+        to_token,
+        amount,
+        CrossChainTxStatus.Pending
+    );
+
+    // ...
+}
+```
+
+As we can see in struct definition in BaseSettlementHandler.sol:
+
+```solidity
+struct CreatedCrossChainTx {
+    uint256 txid;
+    string from_chain;
+    string to_chain;
+    address from;
+    uint256 to;
+    address from_token;
+    uint256 to_token;
+    uint256 amount;
+    CrossChainTxStatus status;
+}
+```
+
+## Impact
+This field is not being used yet but is being wrongly stored.
+
+## Proof of Concept
+N/A
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Replace this field with value: AddressCast.to_uint256(token)
