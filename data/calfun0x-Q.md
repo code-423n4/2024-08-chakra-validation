@@ -183,7 +183,8 @@ function cross_chain_erc20_settlement( ... ) external {
 
 ```rust
 fn receive_cross_chain_callback( ... ) -> bool{
-    // ...}
+    // ...
+}
 ```
 
 ```solidity
@@ -194,6 +195,21 @@ function receive_cross_chain_callback( ... ) external onlySettlement returns (bo
         "invalid CrossChainTxStatus"
     );
     // ...
+}
+```
+
+```rust
+fn receive_cross_chain_msg( ... ) -> bool {
+    // ...
+}
+```
+
+```solidity
+function receive_cross_chain_msg( ... ) external {
+    require(
+        receive_cross_txs[txid].status == CrossChainMsgStatus.Unknow,
+        "Invalid transaction status"
+    );
 }
 ```
 
@@ -228,6 +244,21 @@ fn receive_cross_chain_callback( ... ) -> bool {
     assert(self.created_tx.read(cross_chain_msg_id).to_chain == from_chain, 'to_chain error');
     assert(self.created_tx.read(cross_chain_msg_id).from_handler == to_handler, 'from_handler error');
     assert(self.created_tx.read(cross_chain_msg_id).to_handler == from_handler, 'to_handler error');
+    // ...
+}
+```
+
+
+```solidity
+fn receive_cross_chain_msg( ... ) -> bool {
+    // ...
+}
+```
+
+```rust
+fn receive_cross_chain_msg( ... ) -> bool {
+    // ...
+    assert(to_chain == self.chain_name.read(), 'error to_chain');
     // ...
 }
 ```
