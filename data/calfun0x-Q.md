@@ -341,6 +341,34 @@ Wrong data values written in Solidity event.
 ## Description
 The next events write wrong information into events:
 
+File ChakraSettlementHandler.sol
+Function: cross_chain_erc20_settlement
+```solidity
+emit CrossChainLocked(
+    txid,
+    msg.sender,
+    to,
+    chain,
+    to_chain,
+    address(this), <- This should be from token addr not this contract addr.
+    to_token,
+    amount,
+    mode
+);
+
+event CrossChainLocked(
+    uint256 indexed txid,
+    address indexed from,
+    uint256 indexed to,
+    string from_chain,
+    string to_chain,
+    address from_token,
+    uint256 to_token,
+    uint256 amount,
+    SettlementMode mode
+);
+```
+
 File ChakraSettlement.sol
 Function: receive_cross_chain_msg
 ```solidity
