@@ -248,7 +248,7 @@ fn receive_cross_chain_callback( ... ) -> bool {
 }
 ```
 
-
+ChakraSettlement.sol
 ```solidity
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
@@ -259,6 +259,20 @@ fn receive_cross_chain_msg( ... ) -> bool {
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
     assert(to_chain == self.chain_name.read(), 'error to_chain');
+    // ...
+}
+```
+
+ChakraSettlementHandler.sol
+```solidity
+fn receive_cross_chain_msg( ... ) -> bool {
+    // ...
+}
+```
+
+```rust
+fn receive_cross_chain_msg( ... ) -> bool{
+    assert(to_handler == get_contract_address(),'error to_handler');
     // ...
 }
 ```
