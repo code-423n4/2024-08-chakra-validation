@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0x37",
+  "risk": "2",
+  "title": "Inconsistent tx_id between ChakraSettlement and ERC20Handler in cairo",
+  "issueId": 207,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/207"
+}
