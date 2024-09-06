@@ -274,3 +274,75 @@ Manual revision
 
 ## Recommended Mitigation Steps
 Add missing Cairo checks into Solidity functions.
+
+## Title
+Wrong data values written in Cairo event.
+
+## Description
+The next events write wrong information into events:
+
+file: settlement.cairo
+function receive_cross_chain_msg
+```cairo
+self.emit(CrossChainHandleResult{
+    cross_chain_settlement_id: cross_chain_msg_id,
+    from_chain: to_chain,        <- Wrong from_chain!=to_chain
+    from_handler: to_handler,    <- Wrong
+    to_chain: from_chain,        <- Wrong
+    to_handler: from_handler,    <- Wrong
+    cross_chain_msg_status: status,
+    payload_type: payload_type
+});
+```
+
+## Impact
+Offchain platforms reading wrong information from blockchain network.
+
+## Proof of Concept
+N/A
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Fix variables used that do not correspond with the event fields.
+
+## Title
+Wrong data values written in Solidity event.
+
+## Description
+The next events write wrong information into events:
+
+```solidity
+emit CrossChainHandleResult(
+    txid,
+    status,
+    contract_chain_name, <- This should be from_chain
+    from_chain,          <- This should be to_chain
+    address(to_handler), <- This should be from_handler
+    from_handler,        <- This should be to_handler
+    payload_type
+);
+
+event CrossChainHandleResult(
+    uint256 indexed txid,
+    CrossChainMsgStatus status,
+    string from_chain,
+    string to_chain,
+    address from_handler,
+    uint256 to_handler,
+    PayloadType payload_type
+);
+```
+
+## Impact
+Offchain platforms reading wrong information from blockchain network.
+
+## Proof of Concept
+N/A
+
+## Tools Used
+Manual revision
+
+## Recommended Mitigation Steps
+Fix variables used that do not correspond with the event fields.
