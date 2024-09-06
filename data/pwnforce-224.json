@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "pwnforce",
+  "risk": "3",
+  "title": "The Handler Receiving a Cross-chain Message Must be on the Whitelist for the Source Chain",
+  "issueId": 224,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/224"
+}
