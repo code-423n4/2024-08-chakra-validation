@@ -104,7 +104,7 @@ In the CrossChainHandleResult event, the from_chain and to_chain values are swap
                 cross_chain_msg_status: state,
             });
 ```
-https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/settlement.cairo#L432-L440
+https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/settlement.cairo#L372-L381
 
 In the receive_cross_chain_msg function, we have these parameters:
 
