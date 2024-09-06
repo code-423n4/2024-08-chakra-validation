@@ -309,6 +309,20 @@ self.emit(CrossChainHandleResult{
 });
 ```
 
+file: settlement.cairo
+function receive_cross_chain_callback
+```cairo
+self.emit(CrossChainResult {
+    cross_chain_settlement_id: cross_chain_msg_id,
+    from_address: get_tx_info().unbox().account_contract_address,
+    from_chain: to_chain,            <- This should be from_chain, not to_chain
+    from_handler: to_handler,        <- Wrong
+    to_chain: from_chain,            <- Wrong
+    to_handler: from_handler,        <- Wrong
+    cross_chain_msg_status: state,
+});
+```
+
 ## Impact
 Offchain platforms reading wrong information from blockchain network.
 
@@ -327,6 +341,8 @@ Wrong data values written in Solidity event.
 ## Description
 The next events write wrong information into events:
 
+File ChakraSettlement.sol
+Function: receive_cross_chain_msg
 ```solidity
 emit CrossChainHandleResult(
     txid,
