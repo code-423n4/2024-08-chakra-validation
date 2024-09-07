@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Rhaydden",
+  "risk": "2",
+  "title": "Incorrect message ID parsing due to off-by-one error in `decode_message`",
+  "issueId": 250,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/250"
+}
