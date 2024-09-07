@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "blackpanther",
+  "risk": "3",
+  "title": "`receive_cross_chain_msg` is not checking the status of message when processing",
+  "issueId": 264,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/264"
+}
