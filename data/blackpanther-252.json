@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "blackpanther",
+  "risk": "2",
+  "title": "Insufficient gas requirement in cross-chain ERC20 settlement",
+  "issueId": 252,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/252"
+}
