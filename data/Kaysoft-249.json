@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Kaysoft",
+  "risk": "3",
+  "title": "ChakraSettlement.sol can be destroyed by anyone because the `_Settlement_init(...)` function called in the initialize function is public instead of internal",
+  "issueId": 249,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/249"
+}
