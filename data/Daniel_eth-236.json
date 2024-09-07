@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Daniel_eth",
+  "risk": "2",
+  "title": "No input validation in 'ChakraSettlementHandler::cross_chain_erc20_settlement'. ",
+  "issueId": 236,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/236"
+}
