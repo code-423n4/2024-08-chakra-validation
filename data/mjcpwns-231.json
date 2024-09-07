@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "mjcpwns",
+  "risk": "3",
+  "title": "Funds will be lost from BurnUnlock due to burning and if there is an error in the other chain",
+  "issueId": 231,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/231"
+}
