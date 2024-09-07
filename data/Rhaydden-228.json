@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Rhaydden",
+  "risk": "2",
+  "title": "Unrestricted `required_validators` value in `set_required_validators_num` allows setting invalid validator requirements, potentially breaking consensus",
+  "issueId": 228,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/228"
+}
