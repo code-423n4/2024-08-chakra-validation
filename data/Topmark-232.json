@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Topmark",
+  "risk": "2",
+  "title": "Calldata Slicing Inefficiency Leading to Contract Disruption and Inaccessibility",
+  "issueId": 232,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/232"
+}
