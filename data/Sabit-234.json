@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Sabit",
+  "risk": "2",
+  "title": "receive_cross_chain_msg function always returns true, regardless of the outcome of its operations",
+  "issueId": 234,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/234"
+}
