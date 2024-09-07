@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "crown22",
+  "risk": "3",
+  "title": "Lack of Protection Against Malicious Contract Addresses",
+  "issueId": 261,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/261"
+}
