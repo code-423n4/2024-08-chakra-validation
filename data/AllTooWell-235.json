@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "AllTooWell",
+  "risk": "3",
+  "title": "Inconsistent decimals of ckrBTC between Starknet and other evm compatible chains",
+  "issueId": 235,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/235"
+}
