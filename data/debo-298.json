@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "debo",
+  "risk": "2",
+  "title": "ChakraSettlementHandler contract has Unchecked burn_from Return Value in _erc20_burn function",
+  "issueId": 298,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/298"
+}
