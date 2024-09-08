@@ -1,4 +1,6 @@
-## Vulnerability details
+In this report, there are 3 low findings, marked as L1,L2,L3.
+
+## [L1] - People can increase the nonce of the others users.
 In `ChakraSettlement::receive_cross_chain_msg`, the struct `receive_cross_txs` is bad updated because in the sixth field, the contract updates the struct with `address(this)`, but instead, according to the struct `ReceivedCrossChainTx`, in the sixth field the value updated should be `to_handler`. 
 
 As we can see, `address(this)` would be the address of the `ChakraSettlement`, but instead, in that field, there should be the address of the handler in the destination chain. 
@@ -93,3 +95,6 @@ assertEq(toHandler, address(chakraSettlementArb));
 
 ## Mitigation review
 In the sixth field of the struct `ReceivedCrossChainTx`, instead of using `address(this)`, use `to_handler`.
+
+
+## [L2] - The struct `ReceivedCrossChainTx` is bad updated.
