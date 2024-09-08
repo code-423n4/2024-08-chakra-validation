@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Abdessamed",
+  "risk": "3",
+  "title": "Inconsistent transactions count management between Handler and Settlement Cairo contracts allows malicious users to block cross-chain ERC20 messages",
+  "issueId": 289,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/289"
+}
