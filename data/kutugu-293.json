@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "kutugu",
+  "risk": "3",
+  "title": "Solidity's settlement.receive_cross_chain_msg execution status setting error",
+  "issueId": 293,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/293"
+}
