@@ -1,4 +1,4 @@
-In this report, there are 3 low findings, marked as L1,L2,L3.
+In this report, there are 2 low findings, marked as L1 and L2.
 
 ## [L1] - People can increase the nonce of the others users.
 In `ChakraSettlement::receive_cross_chain_msg`, the struct `receive_cross_txs` is bad updated because in the sixth field, the contract updates the struct with `address(this)`, but instead, according to the struct `ReceivedCrossChainTx`, in the sixth field the value updated should be `to_handler`. 
@@ -98,3 +98,30 @@ In the sixth field of the struct `ReceivedCrossChainTx`, instead of using `addre
 
 
 ## [L2] - The struct `ReceivedCrossChainTx` is bad updated.
+Users could increase the `nonce_manager` of themselves or of the others users just by calling `ChakraSettlement::send_cross_chain_msg`. 
+
+Since there is not access control in this function, users can call it and put another address in the field `from_address`, by doing so they will increase their `nonce_manager` in the contract `ChakraSettlement`. 
+
+## PoC
+Here below there is a test (done in Foundry) where a certain user increase the `nonce_manager` of another user. 
+
+```solidity
+function test_UsersCanIncreaseTheNonceOfTheOthersUsers() public {
+//Note: the required validators is setted to 1, the mode is set to LockMint, all the contracts have been initializated and the operator (SettlementHandler) has been added to chakra token in the 'setUp' file.
+address Mark = makeAddr("Mark");
+address Giulia = makeAddr("Giulia");
+
+vm.selectFork(arbFork);
+vm.startPrank(Mark);
+
+assertEq(chakraSettlementArb.nonce_manager(Giulia), 0); 
+
+//Here mark increase the 'nonce_manager' on the settlement contract of Giulia just by calling 'ChakraSettlement::send_cross_chain_msg'. 
+chakraSettlementArb.send_cross_chain_msg("Ethereum", Giulia, uint160(address(chakraSettlementHandlerEth)), PayloadType.ERC20, "");
+
+assertEq(chakraSettlementArb.nonce_manager(Giulia), 1); 
+}
+```
+
+## Mitigation review
+Implement an access control in `send_cross_chain_msg`, allowing only the handler contract to call this function.
