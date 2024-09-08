@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "kutugu",
+  "risk": "3",
+  "title": "Cairo's settlement.receive_cross_chain_msg can be triggered multiple times.",
+  "issueId": 291,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/291"
+}
