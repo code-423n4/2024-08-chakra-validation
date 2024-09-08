@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "atoko",
+  "risk": "2",
+  "title": "An attacker can reuse old message with altered payload",
+  "issueId": 271,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/271"
+}
