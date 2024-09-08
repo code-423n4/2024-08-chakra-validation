@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "atoko",
+  "risk": "2",
+  "title": "`from_handler` is not checked",
+  "issueId": 275,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/275"
+}
