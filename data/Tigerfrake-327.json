@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tigerfrake",
+  "risk": "2",
+  "title": "Calculated `message_hash` may be incorrect due to missing validations",
+  "issueId": 327,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/327"
+}
