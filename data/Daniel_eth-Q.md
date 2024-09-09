@@ -1,5 +1,7 @@
 In this report, there are 2 low findings, marked as L1 and L2.
 
+Note: In this submission, the vulnerabilities are referred to the solidity codebase. 
+
 ## [L1] - People can increase the nonce of the others users.
 In `ChakraSettlement::receive_cross_chain_msg`, the struct `receive_cross_txs` is bad updated because in the sixth field, the contract updates the struct with `address(this)`, but instead, according to the struct `ReceivedCrossChainTx`, in the sixth field the value updated should be `to_handler`. 
 
