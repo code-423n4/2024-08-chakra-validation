@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Nexarion",
+  "risk": "3",
+  "title": " Truncation Vulnerability in `MessageV1Codec.sol` Due to Incorrect `id` Type Casting",
+  "issueId": 352,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/352"
+}
