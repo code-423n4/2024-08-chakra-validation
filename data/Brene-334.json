@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Brene",
+  "risk": "3",
+  "title": "Incorrect Function Call: Using `_erc20_lock` Instead of `_erc20_burn` in the `MintBurn` Settlement Mode",
+  "issueId": 334,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/334"
+}
