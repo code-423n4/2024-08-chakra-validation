@@ -1,6 +1,6 @@
 # summary
 
-deocde_transfer has a typo in the function naming. 
+deocde_transfer is not as documented / has a typo in the function naming. 
 
 # code snippet
 
