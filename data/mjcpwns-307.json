@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "mjcpwns",
+  "risk": "3",
+  "title": "CrossChainMsgStatus.Unknow fails which leads to loss of funds/DOS",
+  "issueId": 307,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/307"
+}
