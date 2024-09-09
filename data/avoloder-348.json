@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "avoloder",
+  "risk": "3",
+  "title": "Replay attack is possible due to missing tx status check in Cairo ",
+  "issueId": 348,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/348"
+}
