@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tigerfrake",
+  "risk": "2",
+  "title": "Cross chain callback will always fail if source `chain_name` is changed.",
+  "issueId": 342,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/342"
+}
