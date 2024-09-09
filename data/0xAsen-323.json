@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xAsen",
+  "risk": "3",
+  "title": "When processing a callback, a malicious actor can force mark a message as Failed even if the message was successful",
+  "issueId": 323,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/323"
+}
