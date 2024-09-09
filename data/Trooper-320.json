@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Trooper",
+  "risk": "2",
+  "title": "ChakraSettlement.sol & settlement.cairo: receive_cross_chain_msg does not verify payload_type",
+  "issueId": 320,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/320"
+}
