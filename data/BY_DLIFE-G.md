@@ -14,3 +14,18 @@ Modified:
 +     require(!handler_whitelist[chain_name][handler]);
       handler_whitelist[chain_name][handler] = true;
 ```
+
+Code Link2: https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/solidity/handler/contracts/ChakraSettlementHandler.sol#L69
+
+Reason: As mentioned above
+
+Original:
+```solidity
+      handler_whitelist[chain_name][handler] = false;
+```
+
+Modified:
+```solidity
++     require(handler_whitelist[chain_name][handler]);
+      handler_whitelist[chain_name][handler] = false;
+```
