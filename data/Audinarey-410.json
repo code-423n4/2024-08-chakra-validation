@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Audinarey",
+  "risk": "2",
+  "title": "`ChakraSettlement::receive_cross_chain_callback(...) ` can be DOS'd",
+  "issueId": 410,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/410"
+}
