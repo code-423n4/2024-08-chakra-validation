@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Mrxstrange",
+  "risk": "3",
+  "title": "Improper Access Control in __TokenRoles_init Function",
+  "issueId": 361,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/361"
+}
