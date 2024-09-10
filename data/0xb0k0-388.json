@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xb0k0",
+  "risk": "2",
+  "title": "Incorrect `from_address` sent in `settlement::receive_cross_chain_callback(...)` lead to incorrect event emission",
+  "issueId": 388,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/388"
+}
