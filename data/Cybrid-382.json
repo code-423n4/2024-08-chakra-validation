@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Cybrid",
+  "risk": "3",
+  "title": " Cross-Chain ERC20 Settlement Nonce Mismatch Leading to Denial of Service (DoS)",
+  "issueId": 382,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/382"
+}
