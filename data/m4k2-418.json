@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "m4k2",
+  "risk": "2",
+  "title": "Incorrect Status Update in processCrossChainCallback Function",
+  "issueId": 418,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/418"
+}
