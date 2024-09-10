@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "bhilare_",
+  "risk": "3",
+  "title": "If any `receive_cross_chain_msg`, fails by any reason, there's NO way to retry receiving the message & NO current mechanism to refund back the funds/tokens locked/burned(based on mode of settlement) of that user, if FAILED, which leads to direct loss.",
+  "issueId": 391,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/391"
+}
