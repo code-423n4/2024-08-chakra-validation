@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Coinymous",
+  "risk": "2",
+  "title": "Lack of Storage Gap in **Cairo** Upgradeable Contracts May Cause Storage Slot Collision",
+  "issueId": 405,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/405"
+}
