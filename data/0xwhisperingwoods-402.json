@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xwhisperingwoods",
+  "risk": "3",
+  "title": "The invariant `validate signatures should > required_validators_num` would be easily broken in `settlement.cairo`",
+  "issueId": 402,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/402"
+}
