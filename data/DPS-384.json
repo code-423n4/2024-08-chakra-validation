@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "DPS",
+  "risk": "2",
+  "title": "`ChakraSettlement::receive_cross_chain_msg` breaks the invariant because it does not check if the handler is valid",
+  "issueId": 384,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/384"
+}
