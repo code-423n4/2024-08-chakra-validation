@@ -120,3 +120,18 @@ https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac0
 The `to_chain` is not included in the signature hash. So if to_handler's address is the same across different chains (not very likely), the signature which is valid on one chain can be replayed in another chain.
 ### Recommended Mitigation Steps
 Add `to_chain` field to compute signature hash.
+## [L-07] No check of message pending status in receive_cross_chain_callback 
+### Proof of Concept
+https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L138-L165
+There is no check of message pending status in handler_erc20.cairo::receive_cross_chain_callback function.
+### Recommended Mitigation Steps
+```diff
+            assert(to_handler == get_contract_address(),'error to_handler');
+
+            assert(self.settlement_address.read() == get_caller_address(), 'not settlement');
+
+            assert(self.support_handler.read((from_chain, from_handler)) && 
+                    self.support_handler.read((to_chain, contract_address_to_u256(to_handler))), 'not support handler');
+            
++           assert(self.created_tx.read(cross_chain_msg_id).tx_status == CrossChainTxStatus::PENDING, 'tx status error');
+```
