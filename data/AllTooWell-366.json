@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "AllTooWell",
+  "risk": "2",
+  "title": "no check about to_handler in ChakraSettlementHandler::cross_chain_erc20_settlement",
+  "issueId": 366,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/366"
+}
