@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Moksha",
+  "risk": "3",
+  "title": "Valid and already processed messages on one chain can be resubmitted to another chain",
+  "issueId": 369,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/369"
+}
