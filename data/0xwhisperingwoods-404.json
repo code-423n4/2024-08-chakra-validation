@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xwhisperingwoods",
+  "risk": "2",
+  "title": "No zero address check on burn `to` at `ckr_btc.cairo::burn_from` ",
+  "issueId": 404,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/404"
+}
