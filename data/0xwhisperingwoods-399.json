@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xwhisperingwoods",
+  "risk": "2",
+  "title": "No non-zero address check in `settlement.cairo::constructor`,and `handler_erc20.cairo::constructor` constructors ",
+  "issueId": 399,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/399"
+}
