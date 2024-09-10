@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "bhilare_",
+  "risk": "3",
+  "title": "Anyone can cause discrepancy/manipulation in txId's in ChakraSettlement & ChakraSettlementHandler contracts of any particular address's cross chain erc20 settlement transaction, causing callback functions to always revert.",
+  "issueId": 373,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/373"
+}
