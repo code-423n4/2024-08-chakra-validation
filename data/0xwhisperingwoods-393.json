@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xwhisperingwoods",
+  "risk": "2",
+  "title": "Missing validation check in `ckr_btc.cairo::remove_manager` , Manager can accidentally remove self, hence losing priviledges ",
+  "issueId": 393,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/393"
+}
