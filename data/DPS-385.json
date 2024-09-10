@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "DPS",
+  "risk": "2",
+  "title": " `ChakraSettlement::processCrossChainCallback` breaks the invariant because it does not check if the handler is valid  ",
+  "issueId": 385,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/385"
+}
