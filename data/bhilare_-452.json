@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "bhilare_",
+  "risk": "3",
+  "title": "Increasing `m` value for every signature, whether be it of a validator or not, in `verifyECDSA` function, can give opportunity for validator to act maliciously.",
+  "issueId": 452,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/452"
+}
