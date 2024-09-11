@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xNirix",
+  "risk": "2",
+  "title": "Lack of pause functionality exposes system to continuous exploitation in case of detected vulnerabilities",
+  "issueId": 448,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/448"
+}
