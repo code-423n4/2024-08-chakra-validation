@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "avoloder",
+  "risk": "2",
+  "title": "Missing `to_handler` address conversion in ChakraSettlement.sol prevents receiving messages from Starknet",
+  "issueId": 486,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/486"
+}
