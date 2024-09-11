@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xNirix",
+  "risk": "2",
+  "title": "Unrestricted send_cross_chain_msg Function Vulnerable to DOS Attacks",
+  "issueId": 475,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/475"
+}
