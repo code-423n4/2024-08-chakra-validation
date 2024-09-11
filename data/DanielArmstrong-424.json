@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "DanielArmstrong",
+  "risk": "3",
+  "title": "An attacker can make `Handler` to receive wrong transaction or to DOS for receiving transaction.",
+  "issueId": 424,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/424"
+}
