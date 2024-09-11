@@ -248,7 +248,7 @@ https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contr
 Implement `onlyNetwork` modifier or create some other functionality to prevent users from calling the sensitive functions.
 
 
-[L-08] `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Starknet
+## [L-08] `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Starknet
 
 
 In the current implementation of `settlement` smart contract, `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control meaning anybody can call the functions. This can lead to some unexpected scenarios where users can manipulate the values that are sent by the Chakra Network:
@@ -292,7 +292,7 @@ Implement proper access control to prevent users from calling the sensitive func
 
 
 
-[L-09] Enum `TxStatus` is from `ChakraSettlementHandler` is unsused
+## [L-09] Enum `TxStatus` is from `ChakraSettlementHandler` is unsused
 
 In the current version of `ChakraSettlementHandler`, `TxStatus` is not used somehow. Instead, `CrossChainTxStatus` is actively used:
 
