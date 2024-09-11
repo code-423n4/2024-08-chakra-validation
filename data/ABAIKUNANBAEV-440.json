@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "Message hash is assigned incorrect values when verifying signatures on Starknet",
+  "issueId": 440,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/440"
+}
