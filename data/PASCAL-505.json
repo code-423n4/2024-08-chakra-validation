@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "PASCAL",
+  "risk": "3",
+  "title": "Rogue validators can drain the handler contract ",
+  "issueId": 505,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/505"
+}
