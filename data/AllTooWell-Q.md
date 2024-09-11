@@ -135,3 +135,9 @@ There is no check of message pending status in handler_erc20.cairo::receive_cros
             
 +           assert(self.created_tx.read(cross_chain_msg_id).tx_status == CrossChainTxStatus::PENDING, 'tx status error');
 ```
+## [L-08] Inappropriate address in CrossChainMsg event
+### Proof of Concept
+https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/settlement.cairo#L299-L311
+`from_address` use `get_tx_info().unbox().account_contract_address` which is the account contract from which this transaction originates. If the initiator of tx isn't the caller of handler contract, `from_address` in settlement contract is different from `from` in handler contract which use `get_caller_address()`. It leads to chaos about `from_address`.
+### Recommended Mitigation Steps
+Recommend to add `from_address` as input of `send_cross_chain_msg` function and use it to CrossChainMsg event.
