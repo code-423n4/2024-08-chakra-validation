@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "calc1f4r",
+  "risk": "3",
+  "title": "Signature Replay Attack Vulnerability in `receive_cross_chain_msg` Function in `settlement.cairo`",
+  "issueId": 489,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/489"
+}
