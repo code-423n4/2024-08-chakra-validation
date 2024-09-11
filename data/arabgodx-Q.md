@@ -10,7 +10,7 @@
 
 # summary
 
-1. L-02 `validators[msgHash.recover(sig)] && ++m >= required_validators` can abuse required_validators if ++m double spent any validator.
+1. L-02 `validators[msgHash.recover(sig)] && ++m >= required_validators` can abuse required_validators if ++m double spends any 1 validator.
 
 # code snippet
 
