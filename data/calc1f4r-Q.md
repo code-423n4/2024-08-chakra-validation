@@ -83,3 +83,41 @@ self.chakra_managers.write(owner, 1);
 ```
 
 Repeat similar checks in `add_manager`, `remove_manager`, `add_operator`, and `remove_operator` to ensure zero addresses are not used inappropriately.
+
+
+
+## Missing Checks in `ckr_btc.cairo`
+
+
+1. Missing Check in `add_manager`
+Issue: The function add_manager lacks a check to verify if the caller's address is the same as the new_manager. This could allow the caller to add themselves multiple times as a manager, which could lead to gas wastage and redundancy.
+
+Recommendation: Add a check to ensure the caller and new_manager are not the same.
+
+```cairo
+assert(caller != new_manager, Errors::ALREADY_MANAGER);
+```
+2. Missing Check in `remove_manager`
+
+Issue 1: The function `remove_manager` lacks a check to verify if the caller's address is the same as the old_manager. This could potentially allow managers to remove themselves accidentally or maliciously.
+
+Issue 2: The function does not check if the old_manager was ever a manager. This could result in unnecessary gas usage when attempting to remove a non-existent manager.
+
+Recommendation: Add checks to:
+
+Ensure the caller isn't trying to remove themselves unless explicitly intended.
+Ensure the old_manager exists in the list of managers before attempting removal.
+
+```rust
+assert(caller != old_manager, Errors::NOT_MANAGER);
+assert(self.chakra_managers.read(old_manager) == 1, Errors::NOT_MANAGER);
+```
+
+3. Missing Check in `remove_operator`
+Issue: The remove_operator function does not check if the old_operator exists in the list of operators before attempting to remove it. Removing a non-existent operator could result in a waste of gas and state inconsistency.
+
+Recommendation: Add a check to ensure the operator exists before attempting to remove them.
+
+```rust
+assert(self.chakra_operators.read(old_operator) == 1, Errors::NOT_OPERATOR);
+```
