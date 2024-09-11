@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "IzuMan",
+  "risk": "3",
+  "title": "`ChakraSettlement::receive_cross_chain_callback` is Vulnerable to DoS Through Nonce Manipulation and Will Always Revert",
+  "issueId": 438,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/438"
+}
