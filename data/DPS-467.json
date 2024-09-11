@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "DPS",
+  "risk": "3",
+  "title": "If the status was set to Failed in `ChakraSettlement::processCrossChainCallback` the user's tokens will remain stuck in the `ChakraSettlementHandler`",
+  "issueId": 467,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/467"
+}
