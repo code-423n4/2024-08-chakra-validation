@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "DPS",
+  "risk": "2",
+  "title": "`receive_cross_chain_callback()` and `receive_cross_chain_msg()` in `settlement.cairo` break the invariant about updating the transaction status",
+  "issueId": 443,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/443"
+}
