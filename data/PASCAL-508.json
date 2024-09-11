@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "PASCAL",
+  "risk": "3",
+  "title": "Token decimal difference across various chains is not accounted for ",
+  "issueId": 508,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/508"
+}
