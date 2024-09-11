@@ -1,140 +1,4 @@
-## Title
-Any manager could leave the protocol without managers in ckr_btc.cairo
-
-## Description
-`remove_manager` function in `ckr_btc.cairo` lack of control to remove himself letting a manager remove all managers and himself.
-[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/ckr_btc.cairo#L148C1-L161C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/ckr_btc.cairo#L148C1-L161C10)
-```rust
-fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
-    let caller = get_caller_address();
-    assert(self.chakra_managers.read(caller) == 1, Errors::NOT_MANAGER);
-    self.chakra_managers.write(old_manager, 0);
-    // ...
-}
-```
-
-## Impact
-This could lead to remove all managers from the protocol (included himself) and nobody else could add or remove operators in the future.
-
-## Proof of Concept
-
-Add this POC to cairo/handler/src/tests/test_settlement.cairo
-```rust
-#[test]
-fn test_remove_all_managers(){
-    let owner_address = 0x5a9bd6214db5b229bd17a4050585b21c87fc0cadf9871f89a099d27ef800a40;
-    let manager1_address = starknet::contract_address_const::<'manager1_address'>();
-    let manager2_address = starknet::contract_address_const::<'manager2_address'>();
-    
-    let ckrBTC_contract = declare("ckrBTC");
-    // Add owner as manager in constructor
-    let ckrBTC_address = ckrBTC_contract.deploy(@array![owner_address]).unwrap();
-    let ckrbtc_dispath = IckrBTCDispatcher{contract_address: ckrBTC_address};
-    
-    let owner = owner_address.try_into().unwrap();
-
-    // Add manager1 and manager2
-    start_prank(CheatTarget::One(ckrBTC_address), owner);
-    ckrbtc_dispath.add_manager(manager1_address);
-    ckrbtc_dispath.add_manager(manager2_address);
-    stop_prank(CheatTarget::One(ckrBTC_address));
-
-    // Manager2 remove all managers (included himself and owner)
-    start_prank(CheatTarget::One(ckrBTC_address), manager2_address);
-    ckrbtc_dispath.remove_manager(owner);
-    ckrbtc_dispath.remove_manager(manager1_address);
-    ckrbtc_dispath.remove_manager(manager2_address);
-    stop_prank(CheatTarget::One(ckrBTC_address));
-
-    assert(ckrbtc_dispath.is_manager(owner) == false, 'owner is still manager');
-    assert(ckrbtc_dispath.is_manager(manager1_address) == false, 'manager1 is still manager');
-    assert(ckrbtc_dispath.is_manager(manager2_address) == false, 'manager2 is still manager');
-}
-```
-
-## Tools Used
-Manual revision
-
-## Recommended Mitigation Steps
-Add a control to prevent auto-remove or (as in solidity) allow the owner to add new managers.
-```rust
-fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
-    // ...
-    assert(old_manager != caller, 'cant remove yourself');
-    // ...
-}
-```
-
-## Title
-Any manager could leave the protocol without managers in cairo/handler/src/settlement.cairo
-
-## Description
-`remove_manager` function in `cairo/handler/src/settlement.cairo` lack of control to remove himself letting a manager remove all managers and himself.
-[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L260C1-L273C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L260C1-L273C10)
-```rust
-fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
-    let caller = get_caller_address();
-    assert(self.chakra_managers.read(caller) == 1, 'Caller is not a manager');
-    self.chakra_managers.write(old_manager, 0);
-    // ...
-}
-```
-
-## Impact
-This could lead to remove all managers from the protocol (included himself) and nobody else could add or remove validator or set required num validators in the future.
-
-## Proof of Concept
-
-Add this POC to cairo/handler/src/tests/test_settlement.cairo
-```rust
-use settlement_cairo::interfaces::IChakraSettlement;
-
-#[test]
-fn test_remove_all_settlement_managers(){
-    let owner_address = 0x5a9bd6214db5b229bd17a4050585b21c87fc0cadf9871f89a099d27ef800a40;
-    let manager1_address = starknet::contract_address_const::<'manager1_address'>();
-    let manager2_address = starknet::contract_address_const::<'manager2_address'>();
-    
-    // Add owner as manager in constructor
-    let settlement_contract = declare("ChakraSettlement");
-    let settlement_address = settlement_contract.deploy(@array![owner_address, 1]).unwrap();
-    let settlement_dispath = IChakraSettlementDispatcher{contract_address: settlement_address};
-    
-    let owner = owner_address.try_into().unwrap();
-
-    // Add manager1 and manager2
-    start_prank(CheatTarget::One(settlement_address), owner);
-    settlement_dispath.add_manager(manager1_address);
-    settlement_dispath.add_manager(manager2_address);
-    stop_prank(CheatTarget::One(settlement_address));
-
-    // Manager2 remove all managers (included himself and owner)
-    start_prank(CheatTarget::One(settlement_address), manager2_address);
-    settlement_dispath.remove_manager(owner);
-    settlement_dispath.remove_manager(manager1_address);
-    settlement_dispath.remove_manager(manager2_address);
-    stop_prank(CheatTarget::One(settlement_address));
-
-    assert(settlement_dispath.is_manager(owner) == false, 'owner is still manager');
-    assert(settlement_dispath.is_manager(manager1_address) == false, 'manager1 is still manager');
-    assert(settlement_dispath.is_manager(manager2_address) == false, 'manager2 is still manager');
-}
-```
-
-## Tools Used
-Manual revision
-
-## Recommended Mitigation Steps
-Add a control to prevent auto-remove or (as in solidity) allow the owner to add new managers.
-```rust
-fn remove_manager(ref self: ContractState, old_manager: ContractAddress) -> bool {
-    // ...
-    assert(old_manager != caller, 'cant remove yourself');
-    // ...
-}
-```
-
-## Title
+## Title (1/6)
 Missed event for admin operation in cairo functions
 
 ## Description
@@ -161,18 +25,25 @@ Manual revision
 ## Recommended Mitigation Steps
 Emit an event after change adminitrative variables status.
 
-## Title
+
+
+## Title (2/6)
 Missed checks in Cairo functions that exists on Solidity functions with the same logic.
 
 ## Description
-The next functions in cairo files miss the existing checks in Solidity files:
+The next functions in cairo files miss the existing checks in same logic from Solidity files:
 
+1. Missed checks for zero values in Cairo.
+File:cairo/handler/src/handler_erc20.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L167C1-L181C14)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L167C1-L181C14)
 ```rust
 fn cross_chain_erc20_settlement( ... ) -> felt252{
     // ...
 };
 ```
 
+File:solidity/handler/contracts/ChakraSettlementHandler.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L111C1-L121C60)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L111C1-L121C60)
 ```solidity
 function cross_chain_erc20_settlement( ... ) external {
     require(amount > 0, "Amount must be greater than 0");
@@ -181,29 +52,39 @@ function cross_chain_erc20_settlement( ... ) external {
     require(to_token != 0, "Invalid to token address");
 ```
 
+2. Missed checks for status in Cairo receive callback.
+File:cairo/handler/src/settlement.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L393C9-L442C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L393C9-L442C10)
 ```rust
 fn receive_cross_chain_callback( ... ) -> bool{
     // ...
 }
 ```
 
+File:solidity/settlement/contracts/ChakraSettlement.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L312C1-L315C11)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L312C1-L315C11)
 ```solidity
-function receive_cross_chain_callback( ... ) external onlySettlement returns (bool) {
+function processCrossChainCallback( ... ) internal {
     // ...
     require(
         create_cross_txs[txid].status == CrossChainTxStatus.Pending,
-        "invalid CrossChainTxStatus"
+        "Invalid transaction status"
     );
     // ...
 }
 ```
 
+3. Missed checks for status in Cairo receive msg.
+File:cairo/handler/src/handler_erc20.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L108C9-L136C10)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L108C9-L136C10)
 ```rust
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
 }
 ```
 
+File:solidity/settlement/contracts/ChakraSettlement.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L199C1-L202C15)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L199C1-L202C15)
 ```solidity
 function receive_cross_chain_msg( ... ) external {
     require(
@@ -225,18 +106,25 @@ Manual revision
 ## Recommended Mitigation Steps
 Add missing Solidity checks into Cairo functions.
 
-## Title
+
+
+## Title (3/6)
 Missed checks in Solidity functions that exists on Cairo functions with the same logic.
 
 ## Description
 The next functions in solidity files miss the existing checks in Cairo files:
 
+1. Missed checks for right values in Solidity receive callback.
+File:solidity/settlement/contracts/ChakraSettlement.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L303C5-L331C6)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L303C5-L331C6)
 ```solidity
 function processCrossChainCallback( ... ) internal {
     // ...
 }
 ```
 
+File:cairo/handler/src/settlement.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L404C1-L409C123)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L404C1-L409C123)
 ```rust
 fn receive_cross_chain_callback( ... ) -> bool {
     assert(self.created_tx.read(cross_chain_msg_id).tx_id == cross_chain_msg_id, 'message id error');
@@ -248,13 +136,17 @@ fn receive_cross_chain_callback( ... ) -> bool {
 }
 ```
 
-ChakraSettlement.sol
+2. Missed checks for `to chain` in Solidity receive callback.
+File:solidity/settlement/contracts/ChakraSettlement.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L170C5-L244C6)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L170C5-L244C6)
 ```solidity
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
 }
 ```
 
+File:cairo/handler/src/settlement.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L337C5-L337C74)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L337C5-L337C74)
 ```rust
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
@@ -263,13 +155,17 @@ fn receive_cross_chain_msg( ... ) -> bool {
 }
 ```
 
-ChakraSettlementHandler.sol
+3. Missed checks for `to handler` in Solidity receive msg.
+File:https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L300C5-L355C6
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L300C5-L355C6)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L300C5-L355C6)
 ```solidity
 fn receive_cross_chain_msg( ... ) -> bool {
     // ...
 }
 ```
 
+File:cairo/handler/src/handler_erc20.cairo
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L110C1-L111C1)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/handler_erc20.cairo#L110C1-L111C1)
 ```rust
 fn receive_cross_chain_msg( ... ) -> bool{
     assert(to_handler == get_contract_address(),'error to_handler');
@@ -278,7 +174,7 @@ fn receive_cross_chain_msg( ... ) -> bool{
 ```
 
 ## Impact
-Inconsistency between same logic in different programming languages ​​makes it difficult for programmers to find bugs and implement future maintenance.
+Inconsistency between same logic in different programming languages makes hard for programmers to find bugs and maintenance.
 
 ## Proof of Concept
 N/A
@@ -289,14 +185,17 @@ Manual revision
 ## Recommended Mitigation Steps
 Add missing Cairo checks into Solidity functions.
 
-## Title
+
+
+## Title (4/6)
 Wrong data values written in Cairo event.
 
 ## Description
 The next events write wrong information into events:
 
-file: settlement.cairo
-function receive_cross_chain_msg
+1. file: cairo/handler/src/settlement.cairo
+function: receive_cross_chain_msg
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L373C1-L381C16)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L373C1-L381C16)
 ```cairo
 self.emit(CrossChainHandleResult{
     cross_chain_settlement_id: cross_chain_msg_id,
@@ -309,8 +208,9 @@ self.emit(CrossChainHandleResult{
 });
 ```
 
-file: settlement.cairo
+2. file: settlement.cairo
 function receive_cross_chain_callback
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L432C1-L440C16)](https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L432C1-L440C16)
 ```cairo
 self.emit(CrossChainResult {
     cross_chain_settlement_id: cross_chain_msg_id,
@@ -333,16 +233,19 @@ N/A
 Manual revision
 
 ## Recommended Mitigation Steps
-Fix variables used that do not correspond with the event fields.
+Fix variables used to populate event fields.
 
-## Title
+
+
+## Title (5/6)
 Wrong data values written in Solidity event.
 
 ## Description
 The next events write wrong information into events:
 
-File ChakraSettlementHandler.sol
+1. File: solidity/handler/contracts/ChakraSettlementHandler.sol
 Function: cross_chain_erc20_settlement
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L212C1-L222C11)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L212C1-L222C11)
 ```solidity
 emit CrossChainLocked(
     txid,
@@ -356,6 +259,7 @@ emit CrossChainLocked(
     mode
 );
 
+// event fields detail:
 event CrossChainLocked(
     uint256 indexed txid,
     address indexed from,
@@ -369,8 +273,9 @@ event CrossChainLocked(
 );
 ```
 
-File ChakraSettlement.sol
-Function: receive_cross_chain_msg
+2. File ChakraSettlement.sol
+Function: solidity/settlement/contracts/ChakraSettlement.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L235C1-L243C11)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L235C1-L243C11)
 ```solidity
 emit CrossChainHandleResult(
     txid,
@@ -405,14 +310,16 @@ Manual revision
 ## Recommended Mitigation Steps
 Fix variables used that do not correspond with the event fields.
 
-## Title
+
+
+## Title (6/6)
 Wrongly filling from_token in create_cross_txs struct mapping variable.
 
 ## Description
-The from_token field is being assigned with handler contract address (this) intead of the from_token: AddressCast.to_uint256(token)
+The from_token field is being assigned with handler contract address (this) instead of the from_token: AddressCast.to_uint256(token)
 
-File ChakraSettlementHandler.sol
-Function: cross_chain_erc20_settlement
+File: solidity/handler/contracts/ChakraSettlementHandler.sol
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L154C1-L164C15)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L154C1-L164C15)
 ```solidity
 function cross_chain_erc20_settlement( ... ) external {
     // ...
@@ -433,8 +340,8 @@ function cross_chain_erc20_settlement( ... ) external {
 }
 ```
 
-As we can see in struct definition in BaseSettlementHandler.sol:
-
+As we can see in struct definition in solidity/handler/contracts/BaseSettlementHandler.sol:
+[![GitHub code snippet](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/BaseSettlementHandler.sol#L53C1-L63C6)](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/BaseSettlementHandler.sol#L53C1-L63C6)
 ```solidity
 struct CreatedCrossChainTx {
     uint256 txid;
@@ -450,7 +357,7 @@ struct CreatedCrossChainTx {
 ```
 
 ## Impact
-This field is not being used yet but is being wrongly stored.
+Looks like this field is not being used yet but is being wrongly stored.
 
 ## Proof of Concept
 N/A
