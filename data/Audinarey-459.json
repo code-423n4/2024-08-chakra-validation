@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Audinarey",
+  "risk": "3",
+  "title": "inconsistency in sender address when creating cross chain messages on Starknet can lead to loss of funds",
+  "issueId": 459,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/459"
+}
