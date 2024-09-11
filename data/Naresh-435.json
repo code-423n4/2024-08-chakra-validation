@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Naresh",
+  "risk": "2",
+  "title": "Missing Role Assignment in `BaseSettlementHandler` Initialization Leading to Potential Access Control Risks",
+  "issueId": 435,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/435"
+}
