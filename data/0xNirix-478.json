@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xNirix",
+  "risk": "3",
+  "title": "SettlementSignatureVerifier vulnerable to signature reuse attack, bypassing required_validators limit",
+  "issueId": 478,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/478"
+}
