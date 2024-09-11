@@ -8,6 +8,9 @@
 | [L-04](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | `CrossChainHandleResult` event has different params between chains | Low |
 | [L-05](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | Insufficient validation of callback parameters on Ethereum | Low |
 | [L-06](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | `created_tx` is incorrectly created again after calling the handler contract on Starknet | Low |
+| [L-07](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Ethereum | Low |
+| [L-08](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Starknet| Low |
+| [L-09](#l-01-avoid-directly-minting-follow-nfts-to-the-profile-owner-in-processblock) | enum `TxStatus` from `ChakraSettlementHandler` is unused | Low |
 
 
 
@@ -201,3 +204,110 @@ https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlem
 ```
 
 And add the correct status parameter.
+
+
+
+
+## [L-07] `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Ethereum
+
+In the current implementation of `ChakraSettlement` smart contract, `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control meaning anybody can call the functions. This can lead to some unexpected scenarios where users can manipulate the values that are sent by the Chakra Network:
+
+https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L256-264
+```
+function receive_cross_chain_callback(
+        uint256 txid,
+        string memory from_chain,
+        uint256 from_handler,
+        address to_handler,
+        CrossChainMsgStatus status,
+        uint8 sign_type,
+        bytes calldata signatures
+    ) external {
+
+```
+
+https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/ChakraSettlement.sol#L170-180
+```
+ function receive_cross_chain_msg(
+        uint256 txid,
+        string memory from_chain,
+        uint256 from_address,
+        uint256 from_handler,
+        address to_handler,
+        PayloadType payload_type,
+        bytes calldata payload,
+        uint8 sign_type, // validators signature type /  multisig or bls sr25519
+        bytes calldata signatures // signature array
+    ) external 
+
+
+```
+
+### Recommendation
+
+Implement `onlyNetwork` modifier or create some other functionality to prevent users from calling the sensitive functions.
+
+
+[L-08] `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control on Starknet
+
+
+In the current implementation of `settlement` smart contract, `receive_cross_chain_msg()` and `receive_cross_chain_callback()` miss access control meaning anybody can call the functions. This can lead to some unexpected scenarios where users can manipulate the values that are sent by the Chakra Network:
+
+https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L393-403
+```
+  fn receive_cross_chain_callback(
+            ref self: ContractState,
+            cross_chain_msg_id: felt252,
+            from_chain: felt252,
+            to_chain: felt252,
+            from_handler: u256,
+            to_handler: ContractAddress,
+            cross_chain_msg_status: u8,
+            sign_type: u8,
+            signatures: Array<(felt252, felt252, bool)>,
+        ) -> bool 
+
+```
+
+https://github.com/code-423n4/2024-08-chakra/blob/main/cairo/handler/src/settlement.cairo#L325-336
+```
+   fn receive_cross_chain_msg(
+            ref self: ContractState,
+            cross_chain_msg_id: u256,
+            from_chain: felt252,
+            to_chain: felt252,
+            from_handler: u256,
+            to_handler: ContractAddress,
+            sign_type: u8,
+            signatures: Array<(felt252, felt252, bool)>,
+            payload: Array<u8>,
+            payload_type: u8,
+        ) -> bool
+
+```
+
+### Recommendation
+
+Implement proper access control to prevent users from calling the sensitive functions.
+
+
+
+[L-09] Enum `TxStatus` is from `ChakraSettlementHandler` is unsused
+
+In the current version of `ChakraSettlementHandler`, `TxStatus` is not used somehow. Instead, `CrossChainTxStatus` is actively used:
+
+https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/handler/contracts/ChakraSettlementHandler.sol#L27-33
+```
+ enum TxStatus {
+        Unknow,
+        Pending,
+        Minted,
+        Burned,
+        Failed
+    }
+
+```
+
+### Recommendation
+
+Use `TxStatus` enum or delete it.
