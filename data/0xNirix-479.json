@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xNirix",
+  "risk": "3",
+  "title": "Cross-Chain Signature Replay Vulnerability Enabling Unauthorized Fund Drainage",
+  "issueId": 479,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/479"
+}
