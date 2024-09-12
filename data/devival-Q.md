@@ -17,10 +17,10 @@ Make sure to follow the same flow and design patterns between Solidity and Cairo
 
 ## [NC-2] Multiple typos across the codebase
 
-- reuiqred → required [BaseSettlement.sol#L138](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/BaseSettlement.sol#L138);
-- Unknow → Unknown, Unkown → Unknown in multiple instances across the codebase;
-- Arppvoe → Approve [ERC20Payload.sol#L11](https://github.com/code-423n4/2024-08-chakra/blob/f61c899c22492bdf5bdcb07cdb62ea9b4cd38825/solidity/handler/contracts/libraries/ERC20Payload.sol#L11);
-- encodedPaylaod → encodedPayload [ERC20CodecV1.sol#L38](https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/solidity/handler/contracts/ERC20CodecV1.sol#L38);
+- reuiqred -> required [BaseSettlement.sol#L138](https://github.com/code-423n4/2024-08-chakra/blob/main/solidity/settlement/contracts/BaseSettlement.sol#L138);
+- Unknow -> Unknown, Unkown -> Unknown in multiple instances across the codebase;
+- Arppvoe -> Approve [ERC20Payload.sol#L11](https://github.com/code-423n4/2024-08-chakra/blob/f61c899c22492bdf5bdcb07cdb62ea9b4cd38825/solidity/handler/contracts/libraries/ERC20Payload.sol#L11);
+- encodedPaylaod -> encodedPayload [ERC20CodecV1.sol#L38](https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/solidity/handler/contracts/ERC20CodecV1.sol#L38);
 
 ## [NC-3] Wrong event parameters in `cross_chain_erc20_settlement`
 The `cross_chain_erc20_settlement` function of the `ChakraSettlementHandler` contract the following event on success:
