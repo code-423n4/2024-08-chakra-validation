@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tigerfrake",
+  "risk": "2",
+  "title": "Missing `UUPSUpgradeable` initialization potentially impact upgrades",
+  "issueId": 514,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/514"
+}
