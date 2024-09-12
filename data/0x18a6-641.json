@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0x18a6",
+  "risk": "3",
+  "title": "The cuurent implementation of the bridge is incompatible with Starknet's unique L1 <-> L2 messaging mechanism",
+  "issueId": 641,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/641"
+}
