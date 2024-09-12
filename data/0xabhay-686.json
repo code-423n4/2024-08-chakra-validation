@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xabhay",
+  "risk": "2",
+  "title": "Incorrect Handling of BurnUnlock Mode in receive_cross_chain_callback Leads to Token Supply Inflation",
+  "issueId": 686,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/686"
+}
