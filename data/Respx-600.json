@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Respx",
+  "risk": "3",
+  "title": "Cross Chain Callback Status Is Not Checked And Tokens Are Still Burned In The ERC20 Handler For Failed Callbacks (Cairo)",
+  "issueId": 600,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/600"
+}
