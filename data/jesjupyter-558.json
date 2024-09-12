@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "jesjupyter",
+  "risk": "3",
+  "title": "There is No validation on `to_token`",
+  "issueId": 558,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/558"
+}
