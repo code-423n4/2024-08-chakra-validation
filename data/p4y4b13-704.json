@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "p4y4b13",
+  "risk": "3",
+  "title": "MIssing Signature Duplicate check in SettlementSignatureVerifier::verifyECDSA() will cause loss of funds to protocol",
+  "issueId": 704,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/704"
+}
