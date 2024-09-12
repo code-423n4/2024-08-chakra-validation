@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "minato7namikazi",
+  "risk": "3",
+  "title": "`verifyECDSA` function doesn't check if the total number of valid signatures exceeds the `required_validators`",
+  "issueId": 718,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/718"
+}
