@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Subroutine",
+  "risk": "2",
+  "title": "Loss of funds if user gives incorrect to_chain parameter while calling cross_chain_erc20_settlement() in ChakraSettlementHandler.sol ",
+  "issueId": 576,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/576"
+}
