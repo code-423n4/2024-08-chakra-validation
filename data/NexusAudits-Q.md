@@ -374,7 +374,7 @@ function decode_transfer(
 }
 ```
 
-### L-06: Insufficient chain name validation
+## L-06: Insufficient chain name validation
 
 ### Summary
 The `_chain` parameter is assigned to the `chain` state variable without any validation. 
@@ -502,7 +502,7 @@ function payload(bytes calldata _msg) internal pure returns (bytes calldata) {
 
 This ensures that only properly formatted messages can have their payload hashed.
 
-### L-08: Insufficient Handler Validation in ChakraSettlementHandler
+## L-08: Insufficient Handler Validation in ChakraSettlementHandler
 
 ### Summary
 The ChakraSettlementHandler contract is designed to facilitate cross-chain ERC20 token transfers. It uses a system of whitelisted handlers to validate cross-chain messages. However, there's a critical flaw in how these handlers are validated.
