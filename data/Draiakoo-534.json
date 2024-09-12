@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Draiakoo",
+  "risk": "2",
+  "title": "Crosschain replay attack when a chain fork occurs",
+  "issueId": 534,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/534"
+}
