@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "tekkac",
+  "risk": "2",
+  "title": "Signature reuse leads to reducing the number of required validators to 1",
+  "issueId": 621,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/621"
+}
