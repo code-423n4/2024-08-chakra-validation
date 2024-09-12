@@ -22,3 +22,9 @@ https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac0
 8. The ChakraSettlementHandler and related contracts lack rescue functions, risking permanent asset lock-up if tokens are sent by mistake or due to logical errors. This vulnerability is exacerbated by the complex cross-chain settlement process, potentially leading to irretrievable losses. Since the contracts are upgradeable, this might not be a permanent lockup.
 
 9. The ChakraSettlement contract's transaction ID (txid) generation process is vulnerable to potential collisions due to its use of abi.encodePacked with chain names. In specific scenarios, different combinations of chain names could produce identical packed data, leading to the same txid if other components match. This is a improbable scenario but including a delimiter between chain names is ideal.
+
+
+10. The Cairo version lacks crucial input validation. It should verify that the amount is greater than zero, and that the recipient address, handler address, and token address are all valid (non-zero). These checks are essential for preventing invalid transactions and potential security vulnerabilities.
+https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L167-L169
+
+11. The Cairo implementation doesn't appear to use safe transfer methods or check balances before transfers. It should verify the sender has sufficient balance and use transfer functions that return a success boolean, asserting on the result. This helps prevent unexpected behavior and ensures token operations are executed safely.https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L174
