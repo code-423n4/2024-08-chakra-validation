@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xpetern",
+  "risk": "3",
+  "title": "ailure to update/check the crosschainMsgstatus In chakraSettlementHander.sol which will stop the mintburn mode from burning in receive_cross_chain callback.",
+  "issueId": 581,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/581"
+}
