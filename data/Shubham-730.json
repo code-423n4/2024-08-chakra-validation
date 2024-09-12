@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Shubham",
+  "risk": "2",
+  "title": "TokenRoles contract does not implement `_authorizeUpgrade` & `__UUPSUpgradeable_init()`",
+  "issueId": 730,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/730"
+}
