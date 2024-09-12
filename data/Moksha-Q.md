@@ -47,6 +47,7 @@ function cross_chain_erc20_settlement(
 
 ### Impact
 The contract or project uses the old `oz` version `v0.14.0` of the contract which happened to have a medium severity issue that got fixed and upgraded to the latest version `v0.16.0` recently, since the project has Starknet contracts using the oz `Ownable mixin component` where the issue was identified. It would be wise to use the latest.
+Project `Scarb.toml`: https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/Scarb.toml#L10
 
 Full version release notes of `oz` https://github.com/OpenZeppelin/cairo-contracts/releases/tag/v0.16.0
 
