@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "calc1f4r",
+  "risk": "2",
+  "title": "Signature Uniqueness Weakness in `verifyECDSA` Function in `/settlement/contracts/SettlementSignatureVerifier.sol`",
+  "issueId": 522,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/522"
+}
