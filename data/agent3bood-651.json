@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "agent3bood",
+  "risk": "3",
+  "title": "Front-running vulnerability in ChakraSettlement.receive_cross_chain_callback due to unverified from_chain parameter",
+  "issueId": 651,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/651"
+}
