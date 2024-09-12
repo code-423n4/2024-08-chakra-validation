@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xDemon",
+  "risk": "2",
+  "title": "Protocol assume `from_handler` will be fit in `felt252`, this may cause unintended behavior",
+  "issueId": 671,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/671"
+}
