@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "mjcpwns",
+  "risk": "2",
+  "title": "There is actually no checks that prevents a non ERC20 token being passed",
+  "issueId": 512,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/512"
+}
