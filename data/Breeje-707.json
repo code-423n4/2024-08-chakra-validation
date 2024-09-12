@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Breeje",
+  "risk": "2",
+  "title": "`SettlementSignatureVerifier` Fails to Validate Smart Contract Wallet Signatures from Validators",
+  "issueId": 707,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/707"
+}
