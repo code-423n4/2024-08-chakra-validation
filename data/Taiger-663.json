@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Taiger",
+  "risk": "2",
+  "title": "The remove_validator method allows the status of all validators to be set to false, which will cause the contract to fail to pass the signature verification logic and the system will no longer be able to operate normally.",
+  "issueId": 663,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/663"
+}
