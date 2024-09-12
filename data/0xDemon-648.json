@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xDemon",
+  "risk": "3",
+  "title": "ERC20 Token which will be sent to the destination chain will be locked on the contract handler / burned if the cross chain message FAILED",
+  "issueId": 648,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/648"
+}
