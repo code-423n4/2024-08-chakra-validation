@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Audinarey",
+  "risk": "2",
+  "title": "`receive_cross_chain_msg(..)` emits events with wrong values",
+  "issueId": 556,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/556"
+}
