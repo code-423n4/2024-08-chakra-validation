@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "10ap17",
+  "risk": "2",
+  "title": "`check_chakra_signatures` function fails to prevent duplicate signatures",
+  "issueId": 715,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/715"
+}
