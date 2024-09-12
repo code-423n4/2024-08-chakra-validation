@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Taiger",
+  "risk": "3",
+  "title": "Setting required_validators_num to 0 will completely bypass the signature verification mechanism, allowing any user to forge cross-chain transactions.",
+  "issueId": 615,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/615"
+}
