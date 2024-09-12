@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "rabTAI",
+  "risk": "2",
+  "title": "No input validation for Encoding/Decoding Functions",
+  "issueId": 516,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/516"
+}
