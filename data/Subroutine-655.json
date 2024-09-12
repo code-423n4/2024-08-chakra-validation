@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Subroutine",
+  "risk": "3",
+  "title": " Attacker can mint unlimited tokens on the destination chain due to lack of handler checks in send_cross_chain_msg()  in cairo settlement",
+  "issueId": 655,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/655"
+}
