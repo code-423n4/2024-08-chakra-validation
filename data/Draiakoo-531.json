@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Draiakoo",
+  "risk": "2",
+  "title": "The Cairo settlement contract can have a state where there are no managers and can not add more. Also nobody will be able to add/remove validors nor set the minimum threshold of signatures required",
+  "issueId": 531,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/531"
+}
