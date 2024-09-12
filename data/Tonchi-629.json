@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tonchi",
+  "risk": "2",
+  "title": "Missing withdraw functionality if `from_handler` not whitelisted. ",
+  "issueId": 629,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/629"
+}
