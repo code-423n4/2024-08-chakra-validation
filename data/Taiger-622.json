@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Taiger",
+  "risk": "2",
+  "title": "After all validators are removed, the system can no longer perform effective signature verification.",
+  "issueId": 622,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/622"
+}
