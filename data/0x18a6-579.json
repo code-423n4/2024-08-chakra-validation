@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0x18a6",
+  "risk": "3",
+  "title": "User tokens are permenantly lost on both chains if `BurnUnlock` mode fails because of flawed burning pattern",
+  "issueId": 579,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/579"
+}
