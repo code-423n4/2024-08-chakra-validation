@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tumelo_Crypto",
+  "risk": "3",
+  "title": "Protocol will be unable to send cross-chain messages to any other EVM chains from Starknet blockchain.",
+  "issueId": 689,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/689"
+}
