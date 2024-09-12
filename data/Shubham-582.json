@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Shubham",
+  "risk": "2",
+  "title": "Missing checks in `set_required_validators_num` & `remove_validator` will lead to reverts during receiving messages/callbacks",
+  "issueId": 582,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/582"
+}
