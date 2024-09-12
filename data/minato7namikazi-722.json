@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "minato7namikazi",
+  "risk": "3",
+  "title": "`message_hash_receive ` function doesn't include `to_chain` parameter in the initial hash calculation",
+  "issueId": 722,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/722"
+}
