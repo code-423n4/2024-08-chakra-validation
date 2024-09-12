@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xpetern",
+  "risk": "2",
+  "title": "Failed to check whether the handler receiving a cross-chain message is on the whitelist for the source chain",
+  "issueId": 574,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/574"
+}
