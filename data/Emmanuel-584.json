@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Emmanuel",
+  "risk": "3",
+  "title": "`receive_cross_chain_msg` on starknet can be called multiple times to steal funds",
+  "issueId": 584,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/584"
+}
