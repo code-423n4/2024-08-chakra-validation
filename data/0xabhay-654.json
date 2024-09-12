@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xabhay",
+  "risk": "3",
+  "title": "Lack of Access Control in receive_cross_chain_msg and receive_cross_chain_callback Functions Allows Front-Running and Unauthorized Execution",
+  "issueId": 654,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/654"
+}
