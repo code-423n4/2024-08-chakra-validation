@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Draiakoo",
+  "risk": "2",
+  "title": "Cairo's handler `receive_cross_chain_callback` does not handle failed messages",
+  "issueId": 536,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/536"
+}
