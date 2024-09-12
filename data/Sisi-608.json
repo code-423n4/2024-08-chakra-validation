@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Sisi",
+  "risk": "2",
+  "title": "Potential DOS in contract inheriting `UUPSUpgradeable.sol`",
+  "issueId": 608,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/608"
+}
