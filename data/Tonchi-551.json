@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tonchi",
+  "risk": "3",
+  "title": "Missing Access control over critical contracts, leads to several potential risks",
+  "issueId": 551,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/551"
+}
