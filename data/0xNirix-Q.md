@@ -28,3 +28,6 @@ https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac0
 https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L167-L169
 
 11. The Cairo implementation doesn't appear to use safe transfer methods or check balances before transfers. It should verify the sender has sufficient balance and use transfer functions that return a success boolean, asserting on the result. This helps prevent unexpected behavior and ensures token operations are executed safely.https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L174
+
+12. There are a number of difference between cairo and solidity implementation around validations and it will be better if they are standardized. For example -- cairo implementation check for transfer ERC method in payload with solidity doesnot. `            assert(transfer.method_id == ERC20Method::TRANSFER, 'ERC20Method must TRANSFER');
+`https://github.com/code-423n4/2024-08-chakra/blob/d0d45ae1d26ca1b87034e67180fac07ce9642fd9/cairo/handler/src/handler_erc20.cairo#L122C42-L122C63
