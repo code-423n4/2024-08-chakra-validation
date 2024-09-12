@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Purpledragon",
+  "risk": "2",
+  "title": "Lack of Validation for `required_validators` Parameter Leading to Potential System Inoperability",
+  "issueId": 546,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/546"
+}
