@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Taiger",
+  "risk": "2",
+  "title": "The remove_manager() method does not have a minimum number of managers, which may cause all managers to be deleted.",
+  "issueId": 628,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/628"
+}
