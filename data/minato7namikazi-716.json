@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "minato7namikazi",
+  "risk": "3",
+  "title": "`set_required_validators_num` doesn't check if the new value is less than or equal to the current number of validators ",
+  "issueId": 716,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/716"
+}
