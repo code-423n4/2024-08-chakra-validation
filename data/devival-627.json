@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "devival",
+  "risk": "3",
+  "title": "Malicious validator can repeatedly call `receive_cross_chain_msg` to mint more tokens or drain handler's balance",
+  "issueId": 627,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/627"
+}
