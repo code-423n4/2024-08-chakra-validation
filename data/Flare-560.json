@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Flare",
+  "risk": "3",
+  "title": "The user's message might be finalized by validators on the wrong chain due to incorrect event emission.",
+  "issueId": 560,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/560"
+}
