@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Taiger",
+  "risk": "2",
+  "title": "`required_validators` is set to 0, which completely bypasses the validator multi-signature mechanism",
+  "issueId": 665,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/665"
+}
