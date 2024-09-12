@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "devival",
+  "risk": "3",
+  "title": "Different order of critical event parameters between Cairo and Solidity contracts might make it impossible to transfer between Starknet and EVM chains",
+  "issueId": 636,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/636"
+}
