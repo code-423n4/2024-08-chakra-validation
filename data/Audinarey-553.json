@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Audinarey",
+  "risk": "3",
+  "title": "`settlement::receive_cross_chain_callback()` creates transactions wrongly on Starknet",
+  "issueId": 553,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/553"
+}
