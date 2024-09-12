@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "zhuying",
+  "risk": "3",
+  "title": "wrong created_tx key is used to get wrong created_tx mapping state in receive_cross_chain_callback function because of inconsistent txid in handler contract and settlement contract in some case",
+  "issueId": 632,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/632"
+}
