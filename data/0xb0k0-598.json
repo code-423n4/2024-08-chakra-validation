@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "0xb0k0",
+  "risk": "2",
+  "title": "Both the Solidity and Cairo code implementation do not support fee-on-transfer ERC20 tokens",
+  "issueId": 598,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/598"
+}
