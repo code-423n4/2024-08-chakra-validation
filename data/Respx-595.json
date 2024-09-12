@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Respx",
+  "risk": "3",
+  "title": "Received Cross Chain Message Status Is Not Checked In Settlement, Message ID Is Not Checked In Handler (Cairo)",
+  "issueId": 595,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/595"
+}
