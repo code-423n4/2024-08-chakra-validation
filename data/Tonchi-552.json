@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tonchi",
+  "risk": "3",
+  "title": "Missing Access control over `TokenRoles::__TokenRoles_init` function, Leads to several potential risks",
+  "issueId": 552,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/552"
+}
