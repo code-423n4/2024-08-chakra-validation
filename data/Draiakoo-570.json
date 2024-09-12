@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Draiakoo",
+  "risk": "3",
+  "title": "`set_required_validators_num` in BaseSettlement contract does not actually change the required amount of signatures",
+  "issueId": 570,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/570"
+}
