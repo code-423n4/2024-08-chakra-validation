@@ -1,0 +1,8 @@
+{
+  "contest": 432,
+  "handle": "Tumelo_Crypto",
+  "risk": "3",
+  "title": "There is no way for users to retrieve locked funds after failed cross-chain message",
+  "issueId": 567,
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/567"
+}
