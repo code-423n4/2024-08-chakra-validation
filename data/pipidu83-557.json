@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Initializers are not protected throughout `ChakraSettlement`, `ChakraSettlementUpgradeTest`, `SettlementSignatureVerifier` contracts",
   "issueId": 557,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/557"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/557",
+  "validatedIssueId": 272,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/272"
 }
