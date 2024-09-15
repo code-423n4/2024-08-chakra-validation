@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "User and protocol are unable to cancel cross-chain message when it has not been processed for a long time",
   "issueId": 607,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/607"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/607",
+  "validatedIssueId": 245,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/245"
 }
