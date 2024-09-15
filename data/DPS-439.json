@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`settlement::receive_cross_chain_msg` breaks the invariant about updating the transaction status",
   "issueId": 439,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/439"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/439",
+  "validatedIssueId": 338,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/338"
 }
