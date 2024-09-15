@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`remove_manager` function doesn't check if the manager being removed is the last manager",
   "issueId": 728,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/728"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/728",
+  "validatedIssueId": 179,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/179"
 }
