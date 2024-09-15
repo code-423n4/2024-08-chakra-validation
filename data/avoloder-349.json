@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The handler receiving the cross-chain message is not properly validated breaking the main invariant",
   "issueId": 349,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/349"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/349",
+  "validatedIssueId": 387,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/387"
 }
