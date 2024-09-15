@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing Access Control in _Settlement_init and()  _Settlement_handler_init() Function",
   "issueId": 343,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/343"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/343",
+  "validatedIssueId": 393,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/393"
 }
