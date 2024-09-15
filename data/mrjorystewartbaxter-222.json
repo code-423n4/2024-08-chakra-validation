@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The `upgrade()` function does not trigger constructor execution",
   "issueId": 222,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/222"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/222",
+  "validatedIssueId": 163,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/163"
 }
