@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Token inflation and unsettled message  due to nonces msg_count & tx_count being out of sync in handler_erc2.cairo & settlement.cairo",
   "issueId": 572,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/572"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/572",
+  "validatedIssueId": 263,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/263"
 }
