@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "``  *_init  `` functions can be executed by anyone",
   "issueId": 26,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/26"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/26",
+  "validatedIssueId": 530,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/530"
 }
