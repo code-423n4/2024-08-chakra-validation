@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Cross-Chain Replay Attacks Due to Absence of Chain ID",
   "issueId": 725,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/725"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/725",
+  "validatedIssueId": 180,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/180"
 }
