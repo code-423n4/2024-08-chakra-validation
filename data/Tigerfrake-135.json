@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing `ERC20Method` validation in `receive_cross_chain_msg()` allows non-transfer methods to be handled as transfers.",
   "issueId": 135,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/135"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/135",
+  "validatedIssueId": 482,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/482"
 }
