@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Slicing an array includes the last index",
   "issueId": 729,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/729"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/729",
+  "validatedIssueId": 178,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/178"
 }
