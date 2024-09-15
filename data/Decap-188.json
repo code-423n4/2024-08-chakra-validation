@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "User lose his funds when transaction fails on target chain",
   "issueId": 188,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/188"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/188",
+  "validatedIssueId": 463,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/463"
 }
