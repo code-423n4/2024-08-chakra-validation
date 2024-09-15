@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Different ERC20 token decimals between Starknet and BSC are not handled",
   "issueId": 458,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/458"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/458",
+  "validatedIssueId": 328,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/328"
 }
