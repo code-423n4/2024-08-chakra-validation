@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Tokens Remain Locked Or Burned If Cross Chain Callbacks Fail (Cairo and Solidity)",
   "issueId": 599,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/599"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/599",
+  "validatedIssueId": 249,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/249"
 }
