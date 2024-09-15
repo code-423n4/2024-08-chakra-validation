@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Lack of pause functionality exposes system to continuous exploitation in case of detected vulnerabilities",
   "issueId": 448,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/448"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/448",
+  "validatedIssueId": 149,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/149"
 }
