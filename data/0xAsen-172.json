@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "In settlement.cairo::receive_cross_chain_msg - the message will always be marked with Status::SUCCESS",
   "issueId": 172,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/172"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/172",
+  "validatedIssueId": 167,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/167"
 }
