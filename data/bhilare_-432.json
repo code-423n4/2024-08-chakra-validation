@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A single validator can pass its own signature , `required_validators` number of times, to bypass the requirement, which is not intended by the design.",
   "issueId": 432,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/432"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/432",
+  "validatedIssueId": 341,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/341"
 }
