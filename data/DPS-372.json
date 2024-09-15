@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "ChakraSettlementHandler::receive_cross_chain_callback breaks the invariant about the tx status",
   "issueId": 372,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/372"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/372",
+  "validatedIssueId": 377,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/377"
 }
