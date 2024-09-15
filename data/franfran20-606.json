@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Discrepancies In the Transaction ID Between The Handler And Settlement Can Occur Due To Manipulation Of The `msg_count` and `tx_count` Which Can Cause The Follwing Cross Chain Callback To Revert For All Users",
   "issueId": 606,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/606"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/606",
+  "validatedIssueId": 246,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/246"
 }
