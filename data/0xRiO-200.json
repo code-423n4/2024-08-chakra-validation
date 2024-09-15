@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Inadequate Protection Against Unauthorized Initialization in Upgradable Contract",
   "issueId": 200,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/200"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/200",
+  "validatedIssueId": 457,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/457"
 }
