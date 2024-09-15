@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Lack of withdraw or pull mechanism causes funds to be stuck ",
   "issueId": 229,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/229"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/229",
+  "validatedIssueId": 438,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/438"
 }
