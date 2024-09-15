@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "cross_chain_msg_id is generated differently on Ethereum and Starknet",
   "issueId": 108,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/108"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/108",
+  "validatedIssueId": 173,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/173"
 }
