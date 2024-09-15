@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "The status of cross-chain messages is not correctly set in the receive_cross_chain_callback function in settlement.cairo",
   "issueId": 305,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/305"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/305",
+  "validatedIssueId": 410,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/410"
 }
