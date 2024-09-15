@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Only admin should add/remove managers",
   "issueId": 496,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/496"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/496",
+  "validatedIssueId": 308,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/308"
 }
