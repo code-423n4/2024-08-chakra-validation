@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "receive_cross_chain_callback in handler contract will revert because of inconsistent txid in handler contract and settlement contract in some case",
   "issueId": 474,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/474"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/474",
+  "validatedIssueId": 321,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/321"
 }
