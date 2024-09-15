@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Lack of checking transaction status leads to  transaction replay attack which will drain the contract of funds",
   "issueId": 265,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/265"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/265",
+  "validatedIssueId": 427,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/427"
 }
