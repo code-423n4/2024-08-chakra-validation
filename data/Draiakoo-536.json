@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Cairo's handler `receive_cross_chain_callback` does not handle failed messages",
   "issueId": 536,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/536"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/536",
+  "validatedIssueId": 285,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/285"
 }
