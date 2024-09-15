@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A manager could leave the Starknet protocol token without managers and operators permanently in ckr_btc.cairo",
   "issueId": 488,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/488"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/488",
+  "validatedIssueId": 312,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/312"
 }
