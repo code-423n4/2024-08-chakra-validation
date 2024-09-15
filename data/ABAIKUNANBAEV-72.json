@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "TokenRoles contract can be reinitialized",
   "issueId": 72,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/72"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/72",
+  "validatedIssueId": 508,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/508"
 }
