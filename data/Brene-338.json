@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing `_disableInitializers()` in Chakra Contracts",
   "issueId": 338,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/338"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/338",
+  "validatedIssueId": 395,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/395"
 }
