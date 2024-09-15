@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "The `settlement.cairo::check_chakra_signatures()` Function Does Not Ensure Signature Uniqueness, Allowing Attackers to Bypass Validation with Repeated Signatures",
   "issueId": 92,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/92"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/92",
+  "validatedIssueId": 502,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/502"
 }
