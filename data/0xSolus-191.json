@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Funds lost/locked on failed transaction in Handler Contract",
   "issueId": 191,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/191"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/191",
+  "validatedIssueId": 461,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/461"
 }
