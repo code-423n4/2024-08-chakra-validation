@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Anyone can cause a permanent DoS of the execution of the solidity callback function of any address. And `created_tx` instances on cairo's handler will always be desynced",
   "issueId": 526,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/526"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/526",
+  "validatedIssueId": 294,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/294"
 }
