@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Received cross chain messages can be replayed on Starknet(Cairo) contracts",
   "issueId": 691,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/691"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/691",
+  "validatedIssueId": 196,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/196"
 }
