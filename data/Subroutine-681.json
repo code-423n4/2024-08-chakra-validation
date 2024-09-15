@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Malicious validator/proposer can steal tokens and cause other disruptions due to signature replay in settlement::check_chakra_signatures().",
   "issueId": 681,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/681"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/681",
+  "validatedIssueId": 203,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/203"
 }
