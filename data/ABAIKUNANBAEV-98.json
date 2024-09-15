@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Insufficient destination handler validation on the source chain in CharkaSettlementHandler smart contract",
   "issueId": 98,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/98"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/98",
+  "validatedIssueId": 501,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/501"
 }
