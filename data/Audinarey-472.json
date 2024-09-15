@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`u64_array_slice`  and `u128_array_slice` will return wrong slices",
   "issueId": 472,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/472"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/472",
+  "validatedIssueId": 146,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/146"
 }
