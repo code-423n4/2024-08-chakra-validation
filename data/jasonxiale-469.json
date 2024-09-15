@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "malicious user can steal token by repeating calling `settlement.receive_cross_chain_msg` with same parameters",
   "issueId": 469,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/469"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/469",
+  "validatedIssueId": 324,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/324"
 }
