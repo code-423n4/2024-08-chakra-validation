@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Improper access control on Cairo contracts for manager management",
   "issueId": 67,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/67"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/67",
+  "validatedIssueId": 512,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/512"
 }
