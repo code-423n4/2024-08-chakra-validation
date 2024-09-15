@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect decimals Setting for ckrBTC Token May Lead to User Confusion and Inaccurate Transaction Amounts",
   "issueId": 18,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/18"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/18",
+  "validatedIssueId": 176,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/176"
 }
