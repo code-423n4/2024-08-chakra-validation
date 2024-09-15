@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "`is_valid_handler` check should be made before completion of sending the cross chain settlement, or else it can cause direct loss for users.",
   "issueId": 477,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/477"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/477",
+  "validatedIssueId": 318,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/318"
 }
