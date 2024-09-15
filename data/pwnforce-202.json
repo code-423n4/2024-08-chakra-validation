@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "send_cross_chain_msg Function in ChakraSettlement.sol Should Only be Invoked by a Valid Handler",
   "issueId": 202,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/202"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/202",
+  "validatedIssueId": 456,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/456"
 }
