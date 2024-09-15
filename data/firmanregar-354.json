@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Unprotected initializer in '__TokenRoles_init' function let any user call it and reinitialize the contract",
   "issueId": 354,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/354"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/354",
+  "validatedIssueId": 384,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/384"
 }
