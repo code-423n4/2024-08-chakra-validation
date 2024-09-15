@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Constructor will not be executed when a Cairo contract will be upgraded",
   "issueId": 530,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/530"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/530",
+  "validatedIssueId": 290,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/290"
 }
