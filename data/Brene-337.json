@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Lack of Refund Mechanism in `ChakraSettlementHandler` Contract",
   "issueId": 337,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/337"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/337",
+  "validatedIssueId": 396,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/396"
 }
