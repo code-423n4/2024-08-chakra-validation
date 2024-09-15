@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The solidity code does not check the handler whitelist before sending the message",
   "issueId": 548,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/548"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/548",
+  "validatedIssueId": 280,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/280"
 }
