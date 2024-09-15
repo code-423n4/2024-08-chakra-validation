@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Status Unknow is not checked on the Starknet when receiving tx",
   "issueId": 129,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/129"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/129",
+  "validatedIssueId": 486,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/486"
 }
