@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Lack of Duplicate Signature Check in `settlement/contracts/SettlementSignatureVerifier::verifyECDSA` Allows Bypassing of `required_validators` Check",
   "issueId": 394,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/394"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/394",
+  "validatedIssueId": 363,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/363"
 }
