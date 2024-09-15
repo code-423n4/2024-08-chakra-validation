@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A single validator's signature can be used multiple times in the `verifyECDSA(...)` to bypass the required validators",
   "issueId": 482,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/482"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/482",
+  "validatedIssueId": 315,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/315"
 }
