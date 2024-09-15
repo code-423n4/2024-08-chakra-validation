@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Missing from_chain parameter in message_hash allows attacker to block callbacks",
   "issueId": 708,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/708"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/708",
+  "validatedIssueId": 188,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/188"
 }
