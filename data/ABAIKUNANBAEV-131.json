@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Received tx can never be set to FAILED status on Starknet",
   "issueId": 131,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/131"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/131",
+  "validatedIssueId": 170,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/170"
 }
