@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect logic can cause slicing to exceed the intended bounds",
   "issueId": 308,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/308"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/308",
+  "validatedIssueId": 408,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/408"
 }
