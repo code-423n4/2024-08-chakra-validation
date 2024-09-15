@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Malicious users can fail any validly signed transaction",
   "issueId": 613,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/613"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/613",
+  "validatedIssueId": 241,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/241"
 }
