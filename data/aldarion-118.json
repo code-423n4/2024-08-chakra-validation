@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Improper txId creation between settlement and handler contract leading to broken callback logic (Solidity)",
   "issueId": 118,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/118"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/118",
+  "validatedIssueId": 492,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/492"
 }
