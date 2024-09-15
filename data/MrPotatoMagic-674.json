@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Default admin role not revoked on ownership transfer provides old owner address with same privileges",
   "issueId": 674,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/674"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/674",
+  "validatedIssueId": 208,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/208"
 }
