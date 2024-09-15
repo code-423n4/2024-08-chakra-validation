@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing `disableinitializers()` in constructor can lead to malicious takeover of the implementation contract",
   "issueId": 583,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/583"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/583",
+  "validatedIssueId": 259,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/259"
 }
