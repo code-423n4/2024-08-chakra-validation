@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "When the new balance is not equal to the old balance plus the amount, the mint_to function will return false without reverting",
   "issueId": 362,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/362"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/362",
+  "validatedIssueId": 155,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/155"
 }
