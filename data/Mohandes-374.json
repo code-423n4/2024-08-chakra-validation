@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Any user can reinitialize and take complete control of ChakraSettlement using BaseSettlement's public _Settlement_init function ",
   "issueId": 374,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/374"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/374",
+  "validatedIssueId": 375,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/375"
 }
