@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Wrong sender address stored in the cross-transaction struct for the Cairo contracts",
   "issueId": 717,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/717"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/717",
+  "validatedIssueId": 185,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/185"
 }
