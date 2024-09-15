@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "handler.receive_cross_chain_callback doesn't process transaction status correctly, always marking it as SETTLED even if the transaction failed on destination chain",
   "issueId": 182,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/182"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/182",
+  "validatedIssueId": 465,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/465"
 }
