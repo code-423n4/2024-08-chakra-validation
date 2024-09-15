@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`handler_erc20::cross_chain_erc20_settlement` is using a single nonce instead of a seperate one for each address which breaks the invariant.",
   "issueId": 449,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/449"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/449",
+  "validatedIssueId": 148,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/148"
 }
