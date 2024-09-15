@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "An attacker can maliciously change the cross-chain status through front-running",
   "issueId": 125,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/125"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/125",
+  "validatedIssueId": 488,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/488"
 }
