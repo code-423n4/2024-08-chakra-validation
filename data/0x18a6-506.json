@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Malicious validator reuses his own signature `required_validators` times or more to validate any message in the Solidity implementation",
   "issueId": 506,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/506"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/506",
+  "validatedIssueId": 300,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/300"
 }
