@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Starknet handlers ignore the status returned from the destination chain and always finalize the cross-chain messages as successful",
   "issueId": 456,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/456"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/456",
+  "validatedIssueId": 330,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/330"
 }
