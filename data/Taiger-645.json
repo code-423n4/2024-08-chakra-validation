@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Reusing a valid signature may result in funds being diverted",
   "issueId": 645,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/645"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/645",
+  "validatedIssueId": 223,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/223"
 }
