@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A manager could leave the protocol permanently without validators and managers in Starknet",
   "issueId": 487,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/487"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/487",
+  "validatedIssueId": 313,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/313"
 }
