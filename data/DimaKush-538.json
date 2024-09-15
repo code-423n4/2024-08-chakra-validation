@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Verification error in SettlementSignatureVerifier",
   "issueId": 538,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/538"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/538",
+  "validatedIssueId": 283,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/283"
 }
