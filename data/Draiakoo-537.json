@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Problems using tx.origin",
   "issueId": 537,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/537"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/537",
+  "validatedIssueId": 284,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/284"
 }
