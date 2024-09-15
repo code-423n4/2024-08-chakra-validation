@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Public Visibility of __TokenRoles_init Function",
   "issueId": 517,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/517"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/517",
+  "validatedIssueId": 298,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/298"
 }
