@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Discrepancies in Transaction ID's between the handler and settlement can occur due to easy manipulation of the user Nonce",
   "issueId": 550,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/550"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/550",
+  "validatedIssueId": 278,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/278"
 }
