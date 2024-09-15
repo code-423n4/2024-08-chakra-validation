@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Invalid settlement handlers can process received cross-chain messages and callbacks in ChakraSettlement.sol",
   "issueId": 301,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/301"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/301",
+  "validatedIssueId": 413,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/413"
 }
