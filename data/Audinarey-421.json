@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Cross chain transactions are saved with the wrong token address when transactions are created",
   "issueId": 421,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/421"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/421",
+  "validatedIssueId": 350,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/350"
 }
