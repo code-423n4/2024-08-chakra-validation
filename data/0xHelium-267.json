@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "When a crossChain transaction fails, user tokens are not refunded, instead they are locked inside contract",
   "issueId": 267,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/267"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/267",
+  "validatedIssueId": 425,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/425"
 }
