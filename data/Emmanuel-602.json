@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Signatures can be reused across multiple EVM chains to steal funds",
   "issueId": 602,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/602"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/602",
+  "validatedIssueId": 247,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/247"
 }
