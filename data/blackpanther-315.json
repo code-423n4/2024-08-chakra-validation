@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "No way to cancel L1->L2 messages, user can lose tokens forever",
   "issueId": 315,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/315"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/315",
+  "validatedIssueId": 405,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/405"
 }
