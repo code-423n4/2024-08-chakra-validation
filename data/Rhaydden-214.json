@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Any manager can remove the contract owner",
   "issueId": 214,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/214"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/214",
+  "validatedIssueId": 446,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/446"
 }
