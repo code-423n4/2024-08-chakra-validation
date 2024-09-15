@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Reusing a valid signature can be verified by multiple signatures, resulting in all funds in the contract being transferred",
   "issueId": 610,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/610"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/610",
+  "validatedIssueId": 243,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/243"
 }
