@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "`verifyECDSA` could be bypassed by using duplicated sigs",
   "issueId": 634,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/634"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/634",
+  "validatedIssueId": 228,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/228"
 }
