@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The signed message status for received callbacks is not considered in Cairo contracts",
   "issueId": 706,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/706"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/706",
+  "validatedIssueId": 189,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/189"
 }
