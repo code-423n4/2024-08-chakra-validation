@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Users can experience loss of funds if the transaction on the other chain fails due to missing refund mechanism",
   "issueId": 350,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/350"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/350",
+  "validatedIssueId": 386,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/386"
 }
