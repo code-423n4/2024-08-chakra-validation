@@ -4,5 +4,7 @@
   "risk": "2",
   "title": " Users Can Lose Funds Due to Admin's Handler Removal Action",
   "issueId": 679,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/679"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/679",
+  "validatedIssueId": 205,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/205"
 }
