@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "block reorg can cause loss of funds for certain users",
   "issueId": 495,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/495"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/495",
+  "validatedIssueId": 144,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/144"
 }
