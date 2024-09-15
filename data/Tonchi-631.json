@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Funds minted even the callback functionality trigger `from_handler` not whitelisted, Breaks invariants of protocol.",
   "issueId": 631,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/631"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/631",
+  "validatedIssueId": 230,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/230"
 }
