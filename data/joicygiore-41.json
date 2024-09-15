@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "The `SettlementSignatureVerifier::verifyECDSA()` function fails to ensure the uniqueness of signatures, allowing an attacker to repeatedly use the same valid signature to bypass the `required_validators` threshold and send unauthorized cross-chain messages.",
   "issueId": 41,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/41"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/41",
+  "validatedIssueId": 522,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/522"
 }
