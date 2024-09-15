@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Users can experience loss of funds if the transaction on the other chain fails due to missing refund mechanism (Cairo)",
   "issueId": 407,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/407"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/407",
+  "validatedIssueId": 358,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/358"
 }
