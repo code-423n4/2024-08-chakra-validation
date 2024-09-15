@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Users Can Send Cross-Chain Messages Without Paying Destination Gas Fees from StarkNet",
   "issueId": 417,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/417"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/417",
+  "validatedIssueId": 351,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/351"
 }
