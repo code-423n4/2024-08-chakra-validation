@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Callback Function Does Not Verify Message Status from Destination Chain",
   "issueId": 260,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/260"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/260",
+  "validatedIssueId": 429,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/429"
 }
