@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "L2->L1 messages can't be cancelled ",
   "issueId": 317,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/317"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/317",
+  "validatedIssueId": 404,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/404"
 }
