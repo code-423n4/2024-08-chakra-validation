@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Validators will have to cover the gas costs on the destination chains",
   "issueId": 498,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/498"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/498",
+  "validatedIssueId": 306,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/306"
 }
