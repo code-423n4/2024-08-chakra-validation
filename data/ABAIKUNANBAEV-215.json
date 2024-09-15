@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "The cross_chain_msg_status that's sent by Chakra Network on Starknet can be bypassed and set to success ",
   "issueId": 215,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/215"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/215",
+  "validatedIssueId": 164,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/164"
 }
