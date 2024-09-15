@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "receive_cross_chain_msg in settlement.cairo does not check that the txid status is Unknow.",
   "issueId": 647,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/647"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/647",
+  "validatedIssueId": 221,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/221"
 }
