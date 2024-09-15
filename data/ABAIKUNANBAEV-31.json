@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Mint / Burn mode is incorrectly handled",
   "issueId": 31,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/31"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/31",
+  "validatedIssueId": 527,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/527"
 }
