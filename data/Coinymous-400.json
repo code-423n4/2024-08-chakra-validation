@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect `from_token` Address Set in `ChakraSettlementHandler::cross_chain_erc20_settlement` Causes Mismatch Across Chains",
   "issueId": 400,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/400"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/400",
+  "validatedIssueId": 359,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/359"
 }
