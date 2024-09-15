@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Invalid settlement handlers can process received cross-chain messages",
   "issueId": 288,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/288"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/288",
+  "validatedIssueId": 161,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/161"
 }
