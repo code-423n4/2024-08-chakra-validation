@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`ChakraSettlement.receive_cross_chain_msg` and `settlement.receive_cross_chain_msg` are suspicious of the hardfork attack",
   "issueId": 344,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/344"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/344",
+  "validatedIssueId": 392,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/392"
 }
