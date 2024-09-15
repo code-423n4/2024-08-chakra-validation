@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "send_cross_chain_msg should only be called by the handler contract to prevent inconsistency in the tx id of the user",
   "issueId": 603,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/603"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/603",
+  "validatedIssueId": 137,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/137"
 }
