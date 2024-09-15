@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "BurnUnlock Mode in Handler Contract Can Prevent Users From Accessing Tokens When A Revert Occurs In The Cross Chain Transaction Process",
   "issueId": 575,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/575"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/575",
+  "validatedIssueId": 261,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/261"
 }
