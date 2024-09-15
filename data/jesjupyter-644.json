@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`required_validators` setup may out-of-sync for `BaseSettlement` and `SettlementSignatureVerifier`",
   "issueId": 644,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/644"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/644",
+  "validatedIssueId": 224,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/224"
 }
