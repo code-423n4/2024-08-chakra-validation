@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Improper txid generation break the invariants",
   "issueId": 208,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/208"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/208",
+  "validatedIssueId": 450,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/450"
 }
