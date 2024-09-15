@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Signature threshold is always 1",
   "issueId": 703,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/703"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/703",
+  "validatedIssueId": 191,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/191"
 }
