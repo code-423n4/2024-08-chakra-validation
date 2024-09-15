@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing `_disableInitializers()` call leaves implementation contract vulnerable to unauthorized initialization",
   "issueId": 42,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/42"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/42",
+  "validatedIssueId": 521,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/521"
 }
