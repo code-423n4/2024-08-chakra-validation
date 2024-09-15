@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "No limit on payload size, can lead to loss of tokens for user",
   "issueId": 318,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/318"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/318",
+  "validatedIssueId": 403,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/403"
 }
