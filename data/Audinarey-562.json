@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Failed messages cannot be retried",
   "issueId": 562,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/562"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/562",
+  "validatedIssueId": 269,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/269"
 }
