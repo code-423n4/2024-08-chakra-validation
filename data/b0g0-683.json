@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "A single validator signature can be reused to bypass the required validators ode Cairo contracts",
   "issueId": 683,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/683"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/683",
+  "validatedIssueId": 202,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/202"
 }
