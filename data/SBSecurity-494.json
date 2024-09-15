@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing refund in case cross-chain tx failed ",
   "issueId": 494,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/494"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/494",
+  "validatedIssueId": 309,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/309"
 }
