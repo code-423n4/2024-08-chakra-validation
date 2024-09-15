@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Signature reuse",
   "issueId": 591,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/591"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/591",
+  "validatedIssueId": 254,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/254"
 }
