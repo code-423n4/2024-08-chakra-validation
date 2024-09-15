@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Any manager can add and remove other managers to manipulate the protocol via Cairo contracts",
   "issueId": 633,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/633"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/633",
+  "validatedIssueId": 229,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/229"
 }
