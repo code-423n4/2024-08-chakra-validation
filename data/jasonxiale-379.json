@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "`ChakraSettlement.send_cross_chain_msg` can be abused to DOS `ChakraSettlementHandler.receive_cross_chain_callback`",
   "issueId": 379,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/379"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/379",
+  "validatedIssueId": 370,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/370"
 }
