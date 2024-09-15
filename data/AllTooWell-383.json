@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "No return of locked tokens if cross chain message is failed",
   "issueId": 383,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/383"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/383",
+  "validatedIssueId": 369,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/369"
 }
