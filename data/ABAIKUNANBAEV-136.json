@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect checking of supported handler on Starknet",
   "issueId": 136,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/136"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/136",
+  "validatedIssueId": 169,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/169"
 }
