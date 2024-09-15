@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "required_validators limitation may be bypassed by malicious validators",
   "issueId": 197,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/197"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/197",
+  "validatedIssueId": 459,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/459"
 }
