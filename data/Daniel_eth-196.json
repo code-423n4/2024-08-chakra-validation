@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Users may not be able to unlock funds, if there aren't enough tokens to withdraw from a HandlerContract.",
   "issueId": 196,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/196"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/196",
+  "validatedIssueId": 460,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/460"
 }
