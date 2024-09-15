@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Cross-chain ERC20 settlements can be initiated with a invalid parameters breaking an invariant",
   "issueId": 166,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/166"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/166",
+  "validatedIssueId": 168,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/168"
 }
