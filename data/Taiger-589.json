@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "The chakra_operators privileged role can destroy any user's funds.",
   "issueId": 589,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/589"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/589",
+  "validatedIssueId": 256,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/256"
 }
