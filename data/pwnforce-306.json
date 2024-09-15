@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "No refund mechanism when the cross chain transaction fails on the destination chain",
   "issueId": 306,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/306"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/306",
+  "validatedIssueId": 409,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/409"
 }
