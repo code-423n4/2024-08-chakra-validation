@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Incorrect Data Shifting in `to_bytes` Function",
   "issueId": 420,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/420"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/420",
+  "validatedIssueId": 153,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/153"
 }
