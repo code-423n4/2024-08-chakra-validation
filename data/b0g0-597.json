@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Only a single validator signature can be used to bypass the required multiple signatures threshold",
   "issueId": 597,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/597"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/597",
+  "validatedIssueId": 250,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/250"
 }
