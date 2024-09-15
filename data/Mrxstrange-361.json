@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Improper Access Control in __TokenRoles_init Function",
   "issueId": 361,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/361"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/361",
+  "validatedIssueId": 383,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/383"
 }
