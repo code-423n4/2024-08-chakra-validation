@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing input validation in `handler_erc20::cross_chain_erc20_settlement(...)` breaks core invariant",
   "issueId": 363,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/363"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/363",
+  "validatedIssueId": 382,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/382"
 }
