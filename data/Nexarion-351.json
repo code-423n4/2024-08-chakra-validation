@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Truncation Issue When Casting `bytes32` to `address` in `to_address` Function",
   "issueId": 351,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/351"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/351",
+  "validatedIssueId": 157,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/157"
 }
