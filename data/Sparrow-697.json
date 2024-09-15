@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Multiple Signatures from Single Validator Can Be Counted in Verification Process",
   "issueId": 697,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/697"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/697",
+  "validatedIssueId": 192,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/192"
 }
