@@ -4,5 +4,7 @@
   "risk": "Q",
   "title": "QA Report",
   "issueId": 580,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/580"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/580",
+  "validatedIssueId": 547,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/547"
 }
