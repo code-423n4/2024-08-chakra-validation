@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Incorrect settlement mode used on the destination chain",
   "issueId": 38,
-  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/38"
+  "issueUrl": "https://github.com/code-423n4/2024-08-chakra-validation/issues/38",
+  "validatedIssueId": 578,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-08-chakra-findings/issues/578"
 }
